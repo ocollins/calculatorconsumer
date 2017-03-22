@@ -1,0 +1,126 @@
+body {
+    padding: 10px 20px;
+    margin: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: rgb(232, 208, 148);
+}
+
+#title_header {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 60px;
+}
+
+.titlebox{
+    float:left;
+    padding:0 5px;
+    margin:-30px 0 0 30px;
+    background-color: rgb(232, 208, 148);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content_div{
+    border:2px solid grey;
+    border-radius: 10px;
+    padding:15px;
+    float: left;
+    width: 30%;
+    margin-left: 5px;
+    font-size: 20px;
+    height: 200px;
+}
+
+.content_div2{
+    border:2px solid grey;
+    border-radius: 10px;
+    padding:15px;
+    float: left;
+    width: 30%;
+    margin-left: 5px;
+    font-size: 20px;
+    height: 100px;
+}
+#main_container_div {
+    padding-bottom: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+#instructions_div {
+    margin: auto;
+
+}
+
+#user_info_div {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    clear: left;
+    padding-top: 30px;
+}
+
+#calories_form {
+    clear: left;
+
+}
+
+#weight_text, #activity_select, #duration_select
+{
+    float: left;
+    width: 90%;
+    margin: 10px;
+    border-radius: 7px;
+    padding: 5px;
+
+}
+
+#radio_div {
+    clear: left;
+    margin: auto;
+    padding-top: 30px;
+}
+
+#genderf_radio, #genderm_radio {
+    clear: left;
+}
+
+
+#submit_button {
+    clear: left;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    padding: 7px;
+    font-weight: bold;
+}
+
+#result_div {
+    clear: left;
+    margin: auto;
+    width: 60%;
+    padding-top: 50px;
+}
+
+#result_p {
+    text-align: center;
+    padding: 10px;
+    /*float: left;*/
+    border: solid 1px grey;
+    border-radius: 10px;
+    /*margin-left: 30px;*/
+    background-color: whitesmoke;
+    width: 30%;
+    margin: auto;
+}
+
+#footer_div {
+    width: 60%;
+    margin: auto;
+}
+#tennis_fit1_image, #tennis_fit2_image, #dummy {
+    width: 30%;
+    float: left;
+    padding:8px;
+}
+

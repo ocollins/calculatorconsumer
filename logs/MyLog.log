@@ -1,0 +1,131 @@
+2017-03-18 23:02:35,188 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 1:":{"Calories Burned:":262.5,"Duration:":1.5},"Calculation 0:":{"Calories Burned:":131.25,"Duration:":0.75},"Calculation 2:":{"Calories Burned:":525.0,"Duration:":3.0}}
+2017-03-18 23:02:35,245 57   [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+131.25 calorie(s)		in 0.75 hour(s)
+262.5 calorie(s)		in 1.5 hour(s)
+525.0 calorie(s)		in 3.0 hour(s)
+
+2017-03-18 23:02:35,284 96   [main] INFO  edu.matc.controller.RestActivityTest  - Returning activities 
+Activity		MET(s)
+walking		2.5
+volleyball		3.0
+calisthenics		4.0
+golf		4.5
+cycling		4.5
+dancing		4.8
+swimming		5.0
+tennis		7.5
+basketball		8.0
+soccer		10.0
+running		12.0
+
+2017-03-21 21:20:21,477 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 1:":{"Calories Burned:":262.5,"Duration:":1.5},"Calculation 0:":{"Calories Burned:":131.25,"Duration:":0.75},"Calculation 2:":{"Calories Burned:":525.0,"Duration:":3.0}}
+2017-03-21 21:20:21,552 75   [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+131.25 calorie(s)		in 0.75 hour(s)
+262.5 calorie(s)		in 1.5 hour(s)
+525.0 calorie(s)		in 3.0 hour(s)
+
+2017-03-21 21:20:21,591 114  [main] INFO  edu.matc.controller.RestActivityTest  - Returning activities 
+Activity		MET(s)
+walking		2.5
+volleyball		3.0
+calisthenics		4.0
+golf		4.5
+cycling		4.5
+dancing		4.8
+swimming		5.0
+tennis		7.5
+basketball		8.0
+soccer		10.0
+running		12.0
+
+2017-03-21 21:20:35,295 1    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-21 21:20:35,321 27   [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@45d9366e
+2017-03-21 21:20:36,637 1343 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-21 21:20:36,639 1345 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@45d9366e
+2017-03-21 21:21:34,027 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 1:":{"Calories Burned:":262.5,"Duration:":1.5},"Calculation 0:":{"Calories Burned:":131.25,"Duration:":0.75},"Calculation 2:":{"Calories Burned:":525.0,"Duration:":3.0}}
+2017-03-21 21:21:34,093 66   [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+131.25 calorie(s)		in 0.75 hour(s)
+262.5 calorie(s)		in 1.5 hour(s)
+525.0 calorie(s)		in 3.0 hour(s)
+
+2017-03-21 21:21:34,136 109  [main] INFO  edu.matc.controller.RestActivityTest  - Returning activities 
+Activity		MET(s)
+walking		2.5
+volleyball		3.0
+calisthenics		4.0
+golf		4.5
+cycling		4.5
+dancing		4.8
+swimming		5.0
+tennis		7.5
+basketball		8.0
+soccer		10.0
+running		12.0
+
+2017-03-21 21:21:45,113 4    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-21 21:21:45,117 8    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@36e3184d
+2017-03-21 21:21:48,766 3657 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-21 21:21:48,773 3664 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@36e3184d
+2017-03-21 21:21:52,367 7258 [http-nio-8081-exec-1] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-21 21:21:52,367 7258 [http-nio-8081-exec-1] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@36e3184d
+2017-03-21 21:22:08,216 23107 [http-nio-8081-exec-7] INFO  edu.matc.controller.CalculateCaloriesActionServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Calories action servlet
+2017-03-21 21:22:08,928 23819 [http-nio-8081-exec-7] INFO  edu.matc.controller.CalculateCaloriesActionServlet  - Checking context attribute Calories Burned		Duration
+168.75 calorie(s)		in 0.75 hour(s)
+337.5 calorie(s)		in 1.5 hour(s)
+675.0 calorie(s)		in 3.0 hour(s)
+
+2017-03-21 21:22:08,928 23819 [http-nio-8081-exec-7] INFO  edu.matc.controller.CalculateCaloriesActionServlet  - Returning result Calories Burned		Duration
+168.75 calorie(s)		in 0.75 hour(s)
+337.5 calorie(s)		in 1.5 hour(s)
+675.0 calorie(s)		in 3.0 hour(s)
+
+2017-03-21 21:41:21,416 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 1:":{"Calories Burned:":262.5,"Duration:":1.5},"Calculation 0:":{"Calories Burned:":131.25,"Duration:":0.75},"Calculation 2:":{"Calories Burned:":525.0,"Duration:":3.0}}
+2017-03-21 21:41:21,460 44   [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+131.25 calorie(s)		in 0.75 hour(s)
+262.5 calorie(s)		in 1.5 hour(s)
+525.0 calorie(s)		in 3.0 hour(s)
+
+2017-03-21 21:41:21,506 90   [main] INFO  edu.matc.controller.RestActivityTest  - Returning activities 
+Activity		MET(s)
+walking		2.5
+volleyball		3.0
+calisthenics		4.0
+golf		4.5
+cycling		4.5
+dancing		4.8
+swimming		5.0
+tennis		7.5
+basketball		8.0
+soccer		10.0
+running		12.0
+
+2017-03-21 21:41:32,631 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-21 21:41:32,640 9    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@8d164bb
+2017-03-21 21:41:35,438 2807 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-21 21:41:35,440 2809 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@8d164bb
+2017-03-21 21:41:42,022 9391 [http-nio-8081-exec-2] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-21 21:41:42,022 9391 [http-nio-8081-exec-2] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@8d164bb
+2017-03-21 21:46:04,073 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 1:":{"Calories Burned:":262.5,"Duration:":1.5},"Calculation 0:":{"Calories Burned:":131.25,"Duration:":0.75},"Calculation 2:":{"Calories Burned:":525.0,"Duration:":3.0}}
+2017-03-21 21:46:04,128 55   [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+131.25 calorie(s)		in 0.75 hour(s)
+262.5 calorie(s)		in 1.5 hour(s)
+525.0 calorie(s)		in 3.0 hour(s)
+
+2017-03-21 21:46:04,154 81   [main] INFO  edu.matc.controller.RestActivityTest  - Returning activities 
+Activity		MET(s)
+walking		2.5
+volleyball		3.0
+calisthenics		4.0
+golf		4.5
+cycling		4.5
+dancing		4.8
+swimming		5.0
+tennis		7.5
+basketball		8.0
+soccer		10.0
+running		12.0
+
+2017-03-21 21:46:16,140 2    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-21 21:46:16,161 23   [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@95d8ff9
+2017-03-21 21:46:19,690 3552 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-21 21:46:19,697 3559 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@95d8ff9
