@@ -1,4 +1,4 @@
-package edu.matc.controller.CaloriesCalculator;
+package edu.matc.CaloriesCalculator;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
@@ -42,7 +42,7 @@ public class Activity{
 	@Override
  	public String toString(){
 		return 
-			"Activities{" + 
+			"ActivitiesItem{" + 
 			"mets = '" + mets + '\'' + 
 			",name = '" + name + '\'' + 
 			",id = '" + id + '\'' + 

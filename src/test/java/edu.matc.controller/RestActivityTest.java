@@ -3,7 +3,8 @@ package edu.matc.controller;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.matc.controller.CaloriesCalculator.Activity;
+import edu.matc.CaloriesCalculator.Activities;
+import edu.matc.CaloriesCalculator.Activity;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.Before;
@@ -33,12 +34,15 @@ public class RestActivityTest {
     public void getAllActivities() throws Exception {
         WebTarget target = client.target(url + "/list");
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        logger.info("responce from the call to REST " + response);
+        logger.info("response from the call to REST " + response);
+
 
         ObjectMapper objectMapper = new ObjectMapper();
-        Activity activities = null;
+        Activities activities = null;
+        Activity activity = null;
         try {
-            activities = objectMapper.readValue(response, Activity.class);
+            activities = objectMapper.readValue(response, Activities.class);
+            activity = activities.getActivities().get(3);
 
         } catch (JsonGenerationException jge) {
             logger.info(jge);
@@ -48,7 +52,7 @@ public class RestActivityTest {
             logger.info(ioe);
         }
 
-        logger.info("Returning all activities JSON " + activities.toString());
+        logger.info("Returning all activities JSON " + activity.getName());
     }
 
     @Test

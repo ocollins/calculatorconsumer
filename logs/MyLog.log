@@ -180,3 +180,88 @@ running		12.0
 
 2017-03-23 21:58:33,848 85   [main] INFO  edu.matc.controller.RestActivityTest  - responce from the call to REST {"id":1,"name":"walking","mets":2.5}{"id":2,"name":"volleyball","mets":3.0}{"id":3,"name":"calisthenics","mets":4.0}{"id":4,"name":"golf","mets":4.5}{"id":5,"name":"cycling","mets":4.5}{"id":6,"name":"dancing","mets":4.8}{"id":7,"name":"swimming","mets":5.0}{"id":8,"name":"tennis","mets":7.5}{"id":9,"name":"basketball","mets":8.0}{"id":10,"name":"soccer","mets":10.0}{"id":11,"name":"running","mets":12.0}
 2017-03-23 21:58:34,322 559  [main] INFO  edu.matc.controller.RestActivityTest  - Returning all activities JSON Activities{mets = '2.5',name = 'walking',id = '1'}
+2017-03-24 12:00:20,346 0    [main] INFO  edu.matc.controller.RestActivityTest  - {
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "1600",
+               "short_name" : "1600",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Amphitheatre Parkway",
+               "short_name" : "Amphitheatre Pkwy",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Mountain View",
+               "short_name" : "Mountain View",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Santa Clara County",
+               "short_name" : "Santa Clara County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "California",
+               "short_name" : "CA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "94043",
+               "short_name" : "94043",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA",
+         "geometry" : {
+            "location" : {
+               "lat" : 37.4223658,
+               "lng" : -122.0843845
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 37.4237147802915,
+                  "lng" : -122.0830355197085
+               },
+               "southwest" : {
+                  "lat" : 37.42101681970851,
+                  "lng" : -122.0857334802915
+               }
+            }
+         },
+         "place_id" : "ChIJ2eUgeAK6j4ARbn5u_wAGqWA",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "status" : "OK"
+}
+
+2017-03-24 12:04:53,001 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 12:04:53,281 280  [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"id":1,"name":"walking","mets":2.5}{"id":2,"name":"volleyball","mets":3.0}{"id":3,"name":"calisthenics","mets":4.0}{"id":4,"name":"golf","mets":4.5}{"id":5,"name":"cycling","mets":4.5}{"id":6,"name":"dancing","mets":4.8}{"id":7,"name":"swimming","mets":5.0}{"id":8,"name":"tennis","mets":7.5}{"id":9,"name":"basketball","mets":8.0}{"id":10,"name":"soccer","mets":10.0}{"id":11,"name":"running","mets":12.0}
+2017-03-24 12:35:41,628 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 12:35:41,931 303  [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 12:35:42,107 479  [main] INFO  edu.matc.controller.RestActivityTest  - Returning all activities JSON golf
+2017-03-24 12:40:52,279 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 12:40:52,352 73   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 12:40:52,565 286  [main] INFO  edu.matc.controller.RestActivityTest  - Returning all activities JSON golf
