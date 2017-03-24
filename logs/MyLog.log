@@ -149,3 +149,34 @@ basketball		8.0
 soccer		10.0
 running		12.0
 
+2017-03-23 21:13:55,137 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-23 21:13:55,398 261  [main] INFO  edu.matc.controller.RestActivityTest  - Returning activities {"id":1,"name":"walking","mets":2.5}{"id":2,"name":"volleyball","mets":3.0}{"id":3,"name":"calisthenics","mets":4.0}{"id":4,"name":"golf","mets":4.5}{"id":5,"name":"cycling","mets":4.5}{"id":6,"name":"dancing","mets":4.8}{"id":7,"name":"swimming","mets":5.0}{"id":8,"name":"tennis","mets":7.5}{"id":9,"name":"basketball","mets":8.0}{"id":10,"name":"soccer","mets":10.0}{"id":11,"name":"running","mets":12.0}
+2017-03-23 21:14:48,756 1    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-23 21:14:48,858 103  [main] INFO  edu.matc.controller.RestActivityTest  - Returning all activities JSON {"id":1,"name":"walking","mets":2.5}{"id":2,"name":"volleyball","mets":3.0}{"id":3,"name":"calisthenics","mets":4.0}{"id":4,"name":"golf","mets":4.5}{"id":5,"name":"cycling","mets":4.5}{"id":6,"name":"dancing","mets":4.8}{"id":7,"name":"swimming","mets":5.0}{"id":8,"name":"tennis","mets":7.5}{"id":9,"name":"basketball","mets":8.0}{"id":10,"name":"soccer","mets":10.0}{"id":11,"name":"running","mets":12.0}
+2017-03-23 21:56:32,037 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-23 21:56:32,467 430  [main] INFO  edu.matc.controller.RestActivityTest  - Returning all activities JSON walking
+2017-03-23 21:57:28,151 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-23 21:57:28,661 510  [main] INFO  edu.matc.controller.RestActivityTest  - Returning all activities JSON Activities{mets = '2.5',name = 'walking',id = '1'}
+2017-03-23 21:58:33,763 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-23 21:58:33,848 85   [main] INFO  edu.matc.controller.RestActivityTest  - responce from the call to REST {"id":1,"name":"walking","mets":2.5}{"id":2,"name":"volleyball","mets":3.0}{"id":3,"name":"calisthenics","mets":4.0}{"id":4,"name":"golf","mets":4.5}{"id":5,"name":"cycling","mets":4.5}{"id":6,"name":"dancing","mets":4.8}{"id":7,"name":"swimming","mets":5.0}{"id":8,"name":"tennis","mets":7.5}{"id":9,"name":"basketball","mets":8.0}{"id":10,"name":"soccer","mets":10.0}{"id":11,"name":"running","mets":12.0}
+2017-03-23 21:58:34,322 559  [main] INFO  edu.matc.controller.RestActivityTest  - Returning all activities JSON Activities{mets = '2.5',name = 'walking',id = '1'}

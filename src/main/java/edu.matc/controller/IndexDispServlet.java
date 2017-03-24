@@ -62,12 +62,11 @@ public class IndexDispServlet extends HttpServlet {
         //ActivityDao dao = new ActivityDao();
         logger.info("&&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&");
 
-//        Client client = ClientBuilder.newClient();
-//        WebTarget target =
-//                client.target("http://localhost:8080/CaloriesCalculator/activities/list");
-//        TreeMap activitiesList = target.request().get(TreeMap.class);
-        //response = target.request().get(String.class);
-        logger.info("Returning activities " + response);
+        Client client = ClientBuilder.newClient();
+        WebTarget target =
+                client.target("http://localhost:8080/CaloriesCalculator/activities/list");
+//        response = target.request().get(String.class);
+//        logger.info("Returning activities " + response);
 
         //Get a list of all activities and store it in the request
         //request.setAttribute("activitiesList", activitiesList);
