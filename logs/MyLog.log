@@ -129,3 +129,23 @@ running		12.0
 2017-03-21 21:46:16,161 23   [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@95d8ff9
 2017-03-21 21:46:19,690 3552 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
 2017-03-21 21:46:19,697 3559 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - Returning activities org.apache.catalina.connector.ResponseFacade@95d8ff9
+2017-03-22 12:19:00,697 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 1:":{"Calories Burned:":262.5,"Duration:":1.5},"Calculation 0:":{"Calories Burned:":131.25,"Duration:":0.75},"Calculation 2:":{"Calories Burned:":525.0,"Duration:":3.0}}
+2017-03-22 12:19:00,799 102  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+131.25 calorie(s)		in 0.75 hour(s)
+262.5 calorie(s)		in 1.5 hour(s)
+525.0 calorie(s)		in 3.0 hour(s)
+
+2017-03-22 12:19:00,857 160  [main] INFO  edu.matc.controller.RestActivityTest  - Returning activities 
+Activity		MET(s)
+walking		2.5
+volleyball		3.0
+calisthenics		4.0
+golf		4.5
+cycling		4.5
+dancing		4.8
+swimming		5.0
+tennis		7.5
+basketball		8.0
+soccer		10.0
+running		12.0
+

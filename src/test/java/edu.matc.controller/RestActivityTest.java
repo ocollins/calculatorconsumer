@@ -1,5 +1,7 @@
 package edu.matc.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.matc.CaloriesCalculator.Response;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.Before;
@@ -8,7 +10,10 @@ import org.junit.Test;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.ResponseProcessingException;
 import javax.ws.rs.client.WebTarget;
+
+import java.sql.ResultSet;
 
 import static org.junit.Assert.*;
 
@@ -48,6 +53,10 @@ public class RestActivityTest {
         url = url + "/json/1/70/1.5";
         WebTarget target = client.target(url);
         String response = target.request().get(String.class);
+        ObjectMapper mapper = new ObjectMapper();
+        Response obj = mapper.readValue(response, Response.class);
+        //String normalView = mapper.writerWithView(Views.Normal.class).writeValueAsString(staff);
+
         logger.info("Returning calories " + response);
     }
 

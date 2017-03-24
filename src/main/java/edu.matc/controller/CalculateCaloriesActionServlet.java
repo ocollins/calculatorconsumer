@@ -1,5 +1,6 @@
 package edu.matc.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -14,6 +15,8 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import java.io.IOException;
+import edu.matc.CaloriesCalculator.Response;
+import edu.matc.CaloriesCalculator.*;
 
 
 /**
@@ -44,6 +47,8 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
 //
 //        //Create new session
 //        session = request.getSession(true);
+//        ObjectMapper mapper = new ObjectMapper();
+//        Response obj = mapper.readValue(, Staff.class);
 
         logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Calories action servlet");
         //int activity = Integer.parseInt(request.getParameter("activity_select"));
