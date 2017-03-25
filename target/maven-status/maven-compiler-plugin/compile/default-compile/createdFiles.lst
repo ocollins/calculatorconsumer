@@ -1,2 +1,4 @@
+edu/matc/CaloriesCalculator/Activity.class
 edu/matc/controller/CalculateCaloriesActionServlet.class
+edu/matc/CaloriesCalculator/Activities.class
 edu/matc/controller/IndexDispServlet.class

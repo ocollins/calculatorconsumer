@@ -265,3 +265,170 @@ running		12.0
 
 2017-03-24 12:40:52,352 73   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
 2017-03-24 12:40:52,565 286  [main] INFO  edu.matc.controller.RestActivityTest  - Returning all activities JSON golf
+2017-03-24 20:47:45,293 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 20:47:45,548 255  [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 20:47:45,713 420  [main] INFO  edu.matc.controller.RestActivityTest  - Returning all activities JSON golf
+2017-03-24 20:48:03,368 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 20:48:13,914 10546 [http-nio-8081-exec-8] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 21:12:51,884 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 21:12:52,152 268  [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:12:52,345 461  [main] INFO  edu.matc.controller.RestActivityTest  - Returning all activities JSON golf
+2017-03-24 21:17:42,073 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 21:17:42,243 170  [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:37:45,895 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 21:37:45,987 92   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:45:06,171 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 21:45:06,211 40   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:45:20,291 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 21:45:20,726 435  [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:45:23,846 3555 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 21:45:23,907 3616 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:48:58,916 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 21:48:58,952 36   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:49:11,266 1    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 21:49:11,837 572  [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:49:13,196 1931 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 21:49:13,246 1981 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:58:42,950 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 21:58:43,004 54   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:58:54,139 1    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 21:58:54,455 317  [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 21:58:58,744 4606 [http-nio-8081-exec-8] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 21:58:58,813 4675 [http-nio-8081-exec-8] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:11:45,101 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 22:11:45,137 36   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:11:56,656 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 22:11:57,086 430  [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:11:58,319 1663 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 22:11:58,405 1749 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:15:48,156 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 22:15:48,263 107  [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:15:48,743 587  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list walking
+2017-03-24 22:15:48,744 588  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list volleyball
+2017-03-24 22:15:48,744 588  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list calisthenics
+2017-03-24 22:15:48,744 588  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list golf
+2017-03-24 22:15:48,744 588  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list cycling
+2017-03-24 22:15:48,745 589  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list dancing
+2017-03-24 22:15:48,746 590  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list swimming
+2017-03-24 22:15:48,746 590  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list tennis
+2017-03-24 22:15:48,746 590  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list basketball
+2017-03-24 22:15:48,746 590  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list soccer
+2017-03-24 22:15:48,746 590  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list running
+2017-03-24 22:17:10,877 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 22:17:10,957 80   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:17:11,243 366  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list walking
+2017-03-24 22:17:11,243 366  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list volleyball
+2017-03-24 22:17:11,243 366  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list calisthenics
+2017-03-24 22:17:11,243 366  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list golf
+2017-03-24 22:17:11,243 366  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list cycling
+2017-03-24 22:17:11,243 366  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list dancing
+2017-03-24 22:17:11,243 366  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list swimming
+2017-03-24 22:17:11,244 367  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list tennis
+2017-03-24 22:17:11,244 367  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list basketball
+2017-03-24 22:17:11,244 367  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list soccer
+2017-03-24 22:17:11,244 367  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list running
+2017-03-24 22:22:17,842 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 22:22:17,887 45   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:22:18,062 220  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list walking
+2017-03-24 22:22:18,063 221  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list volleyball
+2017-03-24 22:22:18,063 221  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list calisthenics
+2017-03-24 22:22:18,063 221  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list golf
+2017-03-24 22:22:18,064 222  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list cycling
+2017-03-24 22:22:18,064 222  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list dancing
+2017-03-24 22:22:18,065 223  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list swimming
+2017-03-24 22:22:18,065 223  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list tennis
+2017-03-24 22:22:18,065 223  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list basketball
+2017-03-24 22:22:18,066 224  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list soccer
+2017-03-24 22:22:18,068 226  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list running
+2017-03-24 22:22:29,236 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 22:22:29,588 352  [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:22:32,747 3511 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 22:22:32,862 3626 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:26:14,078 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 22:26:14,138 60   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:26:14,463 385  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list walking
+2017-03-24 22:26:14,463 385  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list volleyball
+2017-03-24 22:26:14,464 386  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list calisthenics
+2017-03-24 22:26:14,465 387  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list golf
+2017-03-24 22:26:14,466 388  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list cycling
+2017-03-24 22:26:14,467 389  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list dancing
+2017-03-24 22:26:14,467 389  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list swimming
+2017-03-24 22:26:14,467 389  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list tennis
+2017-03-24 22:26:14,469 391  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list basketball
+2017-03-24 22:26:14,477 399  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list soccer
+2017-03-24 22:26:14,477 399  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list running
+2017-03-24 22:26:25,750 1    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 22:26:26,115 366  [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:26:29,198 3449 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 22:26:29,265 3516 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:40:15,327 829578 [http-nio-8081-exec-3] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 22:40:15,380 829631 [http-nio-8081-exec-3] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:47:01,858 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories Calories Burned		Duration
+1.875 calorie(s)		in 0.75 hour(s)
+3.75 calorie(s)		in 1.5 hour(s)
+7.5 calorie(s)		in 3.0 hour(s)
+
+2017-03-24 22:47:01,919 61   [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:47:02,149 291  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list walking
+2017-03-24 22:47:02,150 292  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list volleyball
+2017-03-24 22:47:02,150 292  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list calisthenics
+2017-03-24 22:47:02,150 292  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list golf
+2017-03-24 22:47:02,150 292  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list cycling
+2017-03-24 22:47:02,150 292  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list dancing
+2017-03-24 22:47:02,150 292  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list swimming
+2017-03-24 22:47:02,150 292  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list tennis
+2017-03-24 22:47:02,150 292  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list basketball
+2017-03-24 22:47:02,150 292  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list soccer
+2017-03-24 22:47:02,150 292  [main] INFO  edu.matc.controller.RestActivityTest  - Activity from the list running
+2017-03-24 22:47:12,698 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 22:47:13,035 337  [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}
+2017-03-24 22:47:14,118 1420 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - &&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&
+2017-03-24 22:47:14,215 1517 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"activities":[{"id":1,"name":"walking","mets":2.5},{"id":2,"name":"volleyball","mets":3.0},{"id":3,"name":"calisthenics","mets":4.0},{"id":4,"name":"golf","mets":4.5},{"id":5,"name":"cycling","mets":4.5},{"id":6,"name":"dancing","mets":4.8},{"id":7,"name":"swimming","mets":5.0},{"id":8,"name":"tennis","mets":7.5},{"id":9,"name":"basketball","mets":8.0},{"id":10,"name":"soccer","mets":10.0},{"id":11,"name":"running","mets":12.0}]}

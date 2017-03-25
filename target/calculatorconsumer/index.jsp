@@ -23,7 +23,7 @@
     <div id="main_container_div">
         <h2 id="title_header">Calories Burned Calculator</h2>
         <p>${applicationScope.test}</p>
-        <p>${activitiesList}</p>
+        <p>${test}</p>
         <div class="content_div">
             <div class="titlebox">What are calories?</div>
             <p class="info_p">A calorie is a measure of energy, just as a pound is a measure of weight
@@ -51,7 +51,7 @@
     <div id="user_info_div">
         <form action="calculateCaloriesActionServlet" id="calories_form" method="get">
             <div class="content_div2">
-                <div class="titlebox">Enter your weight in pounds or kilograms</div>
+                <div class="titlebox">Enter your weight</div>
                 <p class="info_p">
                     <input type="radio" name="weight_unit" value="lb" checked> Pounds
                     <input type="radio" name="weight_unit" value="kg"> Kilograms<br>
@@ -62,11 +62,8 @@
                 <div class="titlebox">Select activity</div>
                 <p class="info_p">
                     <select id="activity_select" name="activity_select">
-                        <%--<option value="1">Tennis</option>--%>
-                        <%--<option value="">Select exercise2</option>--%>
-                        <%--<option value="">Select exercise3</option>--%>
-                        <c:forEach var="option" items="${activitiesList}">
-                            <option value="">selection</option>
+                        <c:forEach var="activity" items="${activityList}">
+                            <option value="${activity.id}">${activity.id}</option>
                         </c:forEach>
                     </select>
                 </p>

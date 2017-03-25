@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.CaloriesCalculator.Activities;
 import edu.matc.CaloriesCalculator.Activity;
 import org.apache.log4j.Logger;
+import static org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.Before;
 
@@ -15,6 +16,8 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by student on 3/17/17.
@@ -42,7 +45,11 @@ public class RestActivityTest {
         Activity activity = null;
         try {
             activities = objectMapper.readValue(response, Activities.class);
-            activity = activities.getActivities().get(3);
+            List<Activity> myList = activities.getActivities();
+            for(Activity anActivity : myList) {
+                logger.info("Activity from the list " + anActivity.getName());
+            }
+            activity = activities.getActivities().get(0);
 
         } catch (JsonGenerationException jge) {
             logger.info(jge);
@@ -52,7 +59,8 @@ public class RestActivityTest {
             logger.info(ioe);
         }
 
-        logger.info("Returning all activities JSON " + activity.getName());
+        assertEquals("Activity is not walking ", "walking", activity.getName());
+        //logger.info("Returning all activities JSON " + activity.getName());
     }
 
     @Test
@@ -64,17 +72,17 @@ public class RestActivityTest {
 
     }
 
-    @Test
-    public void getCaloriesBurnedJSON() throws Exception {
-        url = url + "/json/1/70/1.5";
+//    @Test
+//    public void getCaloriesBurnedJSON() throws Exception {
+//        url = url + "/json/1/70/1.5";
 //        WebTarget target = client.target(url);
 //        String response = target.request().get(String.class);
 //        ObjectMapper mapper = new ObjectMapper();
 //        Response obj = mapper.readValue(response, Response.class);
-        //String normalView = mapper.writerWithView(Views.Normal.class).writeValueAsString(staff);
-
-        //logger.info("Returning calories " + response);
-    }
+//        String normalView = mapper.writerWithView(Views.Normal.class).writeValueAsString(staff);
+//
+//        logger.info("Returning calories " + response);
+//    }
 
     @Test
     public void getCaloriesBurnedHTML() throws Exception {

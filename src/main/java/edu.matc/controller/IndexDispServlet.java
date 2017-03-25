@@ -7,6 +7,11 @@ package edu.matc.controller;
  * @author Calories Calculator team
  */
 
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.matc.CaloriesCalculator.Activities;
+import edu.matc.CaloriesCalculator.Activity;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -37,6 +42,7 @@ import javax.servlet.annotation.*;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
 
 //@WebServlet(
 //        name = "indexDispServlet",
@@ -58,22 +64,40 @@ public class IndexDispServlet extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session = request.getSession(true);
-        //Create AdminActions instance
-        //ActivityDao dao = new ActivityDao();
         logger.info("&&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&");
 
         Client client = ClientBuilder.newClient();
-        WebTarget target =
-                client.target("http://localhost:8080/CaloriesCalculator/activities/list");
-//        response = target.request().get(String.class);
-//        logger.info("Returning activities " + response);
+        String url = "http://localhost:8080/CaloriesCalculator/activities";
+        WebTarget target = client.target(url + "/list");
+        String restResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
+        logger.info("response from the call to REST " + restResponse);
 
-        //Get a list of all activities and store it in the request
-        //request.setAttribute("activitiesList", activitiesList);
-        request.setAttribute("test", "TestString");
 
-        String url = "/index.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+        ObjectMapper objectMapper = new ObjectMapper();
+        Activities activities = null;
+        Activity activity = null;
+        try {
+            activities = objectMapper.readValue(restResponse, Activities.class);
+            List<Activity> activityList = activities.getActivities();
+//            for (Activity activity : activities.getActivities()) {
+//
+//            }
+            activity = activityList.get(0);
+//            String name = activity.getName();
+            request.setAttribute("activities", activityList);
+            request.setAttribute("test", activity.getName());
+
+        } catch (JsonGenerationException jge) {
+            logger.info(jge);
+        } catch (JsonMappingException jme) {
+            logger.info(jme);
+        } catch (IOException ioe) {
+            logger.info(ioe);
+        }
+
+
+        String jspUrl = "/index.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(jspUrl);
         dispatcher.forward(request, response);
 
     }
