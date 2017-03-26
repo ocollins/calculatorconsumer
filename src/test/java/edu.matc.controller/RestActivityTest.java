@@ -58,12 +58,11 @@ public class RestActivityTest {
         }
 
         assertEquals("Activity is not walking ", "walking", testActivity.getName());
-        //logger.info("Returning all activities JSON " + activity.getName());
     }
 
     @Test
-    public void getCaloriesBurnedText() throws Exception {
-        url = url + "/json/1/70/1.5/kg";
+    public void getCaloriesBurnedJSON() throws Exception {
+        url = url + "/json/1/85/1.5/kg";
         WebTarget target = client.target(url);
         String response = target.request().get(String.class);
         logger.info("Returning calories " + response);
@@ -88,7 +87,7 @@ public class RestActivityTest {
             logger.info(ioe);
         }
 
-        double testCalories = 3.75;
+        double testCalories = 318.75;
         double returnCalories = calculationForRequestedDuration.getCaloriesBurned();
         assertEquals("Returned calories are not correct ", testCalories, returnCalories, 0);
     }

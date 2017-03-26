@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5d21467-a866-4792-9fe1-449e060e6c80" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Calculations.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer.war" afterPath="$PROJECT_DIR$/target/calculatorconsumer.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/controller/CalculateCaloriesActionServlet.class" afterPath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/controller/CalculateCaloriesActionServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/controller/IndexDispServlet.class" afterPath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/controller/IndexDispServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/CalculateCaloriesActionServlet.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/CalculateCaloriesActionServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/IndexDispServlet.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/IndexDispServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/controller/RestActivityTest.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/matc/controller/RestActivityTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/MyLog.log" afterPath="$PROJECT_DIR$/logs/MyLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer/css/index.css" afterPath="$PROJECT_DIR$/target/calculatorconsumer/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer/index.jsp" afterPath="$PROJECT_DIR$/target/calculatorconsumer/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.controller.RestActivityTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.controller.RestActivityTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.controller.RestActivityTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.controller.RestActivityTest.txt" />
     </list>
@@ -48,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+            <state relative-caret-position="272">
+              <caret line="117" column="20" lean-forward="false" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -90,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestActivityTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RestActivityTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="67" column="61" lean-forward="false" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
+            <state relative-caret-position="168">
+              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,11 +122,11 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Activity.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Activities.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Calculation.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/index.css" />
+        <option value="$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java" />
       </list>
     </option>
   </component>
@@ -859,17 +846,11 @@
       <workItem from="1490373918628" duration="472000" />
       <workItem from="1490374697796" duration="2546000" />
       <workItem from="1490405921877" duration="6625000" />
-      <workItem from="1490451214900" duration="15671000" />
+      <workItem from="1490451214900" duration="17938000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestActivityTest - 2017.03.24 at 22h 15m 49s.xml">
-      <configuration name="RestActivityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestActivityTest - 2017.03.24 at 22h 17m 11s.xml">
-      <configuration name="RestActivityTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestActivityTest - 2017.03.25 at 10h 17m 29s.xml">
       <configuration name="RestActivityTest" configurationId="JUnit" />
     </history-entry>
@@ -891,12 +872,18 @@
     <history-entry file="RestActivityTest - 2017.03.25 at 12h 18m 56s.xml">
       <configuration name="RestActivityTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestActivityTest_getAllActivities - 2017.03.24 at 12h 00m 20s.xml">
-      <configuration name="RestActivityTest.getAllActivities" configurationId="JUnit" />
+    <history-entry file="RestActivityTest - 2017.03.25 at 20h 09m 53s.xml">
+      <configuration name="RestActivityTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestActivityTest - 2017.03.25 at 20h 11m 38s.xml">
+      <configuration name="RestActivityTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestActivityTest - 2017.03.25 at 20h 20m 43s.xml">
+      <configuration name="RestActivityTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36818000" />
+    <option name="totallyTimeSpent" value="39085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="82" width="1853" height="998" extended-state="0" />
@@ -1230,16 +1217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="67" column="61" lean-forward="false" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Calculation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1282,9 +1259,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+        <state relative-caret-position="272">
+          <caret line="117" column="20" lean-forward="false" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
