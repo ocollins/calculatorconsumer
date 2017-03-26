@@ -22,8 +22,6 @@
 
     <div id="main_container_div">
         <h2 id="title_header">Calories Burned Calculator</h2>
-        <p>${applicationScope.test}</p>
-        <p>${test}</p>
         <div class="content_div">
             <div class="titlebox">What are calories?</div>
             <p class="info_p">A calorie is a measure of energy, just as a pound is a measure of weight
@@ -41,7 +39,7 @@
         <div class="content_div">
             <div class="titlebox">How many calories did you burn?</div>
             <p class="info_p"> Count how many calories you burn doing your favorite activities or how
-                long you should do an activity to lose weight. Enter your weight in kilograms, gender, and number
+                long you should do an activity to lose weight. Enter your weight in kilograms or pounds, and number
                 of minutes for any of the exercise you do.
             </p>
         </div>
@@ -62,8 +60,8 @@
                 <div class="titlebox">Select activity</div>
                 <p class="info_p">
                     <select id="activity_select" name="activity_select">
-                        <c:forEach var="activity" items="${activityList}">
-                            <option value="${activity.id}">${activity.id}</option>
+                        <c:forEach var="activity" items="${activities}">
+                            <option value="${activity.id}">${activity.name}</option>
                         </c:forEach>
                     </select>
                 </p>
@@ -91,10 +89,26 @@
     </div>
 </div>
 <div id="result_div">
-    <c:if test="${not empty CaloriesResult}">
-        <p id="result_p">${CaloriesResult}</p>
+    <c:if test="${not empty RequestedCaloriesResult}">
+        <p class="result_p_mess">You burned</p>
+        <p class="result_p">${RequestedCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
+        <p class="result_p_mess">If you exercise 20 more minutes you will burn</p>
+        <p class="result_p">${MoreCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
+
     </c:if>
 </div>
+
+<div id="reset_div">
+    <input type="button" id="reset_button" onclick="resetForm()" value="Reset"/>
+</div>
+
+<script>
+    function resetForm() {
+        document.getElementById("calories_form").reset();
+        document.getElementsByName("result_div").innerHTML = "";
+    }
+
+</script>
 
 <div id="footer_div">
     <img src="images/tennis_fit1.jpg" alt="Fitness Picture" id="tennis_fit1_image"></img>

@@ -63,29 +63,25 @@ public class IndexDispServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        HttpSession session = request.getSession(true);
-        logger.info("&&&&&&&&&&&&&&&&&&&&&&&&&&Inside display servlet&&&&&&&&&&&&&&&&&&&&&&&&&");
+        //HttpSession session = request.getSession(true);
 
+        //Call the service to get a list of all activities to populate the dropbox
         Client client = ClientBuilder.newClient();
         String url = "http://localhost:8080/CaloriesCalculator/activities";
         WebTarget target = client.target(url + "/list");
+
+        //Get responce
         String restResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
         logger.info("response from the call to REST " + restResponse);
 
-
+        //Map to the Activities POJO
         ObjectMapper objectMapper = new ObjectMapper();
         Activities activities = null;
         Activity activity = null;
         try {
             activities = objectMapper.readValue(restResponse, Activities.class);
             List<Activity> activityList = activities.getActivities();
-//            for (Activity activity : activities.getActivities()) {
-//
-//            }
-            activity = activityList.get(0);
-//            String name = activity.getName();
             request.setAttribute("activities", activityList);
-            request.setAttribute("test", activity.getName());
 
         } catch (JsonGenerationException jge) {
             logger.info(jge);
@@ -95,7 +91,7 @@ public class IndexDispServlet extends HttpServlet {
             logger.info(ioe);
         }
 
-
+        //Redirect to the index.jsp
         String jspUrl = "/index.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(jspUrl);
         dispatcher.forward(request, response);

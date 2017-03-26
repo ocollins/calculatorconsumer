@@ -85,6 +85,10 @@ body {
     clear: left;
 }
 
+#activity_select, #duration_select {
+    margin-top: 35px;
+
+}
 
 #submit_button {
     clear: left;
@@ -102,7 +106,13 @@ body {
     padding-top: 50px;
 }
 
-#result_p {
+.result_p_mess {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.result_p {
     text-align: center;
     padding: 10px;
     /*float: left;*/
@@ -112,6 +122,16 @@ body {
     background-color: whitesmoke;
     width: 30%;
     margin: auto;
+    font-weight: bold;
+}
+
+#calories_span {
+    margin-left: 10px;
+}
+
+#reset_button {
+    margin: auto;
+    padding-top: 20px;
 }
 
 #footer_div {

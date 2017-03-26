@@ -1,5 +1,11 @@
 package edu.matc.controller;
 
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.matc.CaloriesCalculator.Calculation1;
+import edu.matc.CaloriesCalculator.Calculation2;
+import edu.matc.CaloriesCalculator.Calculations;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -35,7 +41,8 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //response.setContentType("text/html");
+        //Create context container
+        ServletContext context = getServletContext();
 
 //        //Remove the old session
 //        HttpSession session = request.getSession(true);
@@ -47,26 +54,84 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
 //        Response obj = mapper.readValue(, Staff.class);
 
         logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Calories action servlet");
-        //int activity = Integer.parseInt(request.getParameter("activity_select"));
+        //Get info from the user
         int weight = Integer.parseInt(request.getParameter("weight_text"));
         double duration = Double.parseDouble(request.getParameter("duration_select"));
+        int activity = Integer.parseInt(request.getParameter("activity_select"));
+        String unit = request.getParameter("weight_unit");
 
+        //Call REST service to get calories burned result
         Client client = ClientBuilder.newClient();
-        String url = "http://localhost:8080/CaloriesCalculator/activities/text/";
-        //url = url + activity + "/" + weight + "/" + duration;
-        url = url + 1 + "/" + weight + "/" + duration;
+        String url = "http://localhost:8080/CaloriesCalculator/activities/json/";
+        url = url + activity + "/" + weight + "/" + duration +"/" + unit;
+        logger.info(url);
         WebTarget target = client.target(url);
+        String responseFromREST = target.request().get(String.class);
 
-        String calcResult = target.request().get(String.class);
-        ServletContext context = getServletContext();
-        context.setAttribute("CaloriesResult",  calcResult);
-        logger.info("Checking context attribute " + context.getAttribute("CaloriesResult"));
-        //response = target.request().get(String.class);
-        logger.info("Returning result " + calcResult);
+        Calculations calculations = null;
+
+        //Conver to Calculations POJOs and get calories result for the
+        //requested duration and store in context container
+        context.setAttribute("RequestedCaloriesResult",  getCalculation1(responseFromREST, calculations));
+
+        //Conver to Calculations POJOs and get calories result if exercised more
+        //and store in context container
+        context.setAttribute("MoreCaloriesResult",  getCalculation2(responseFromREST, calculations));
 
         String responceUrl = "/index.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceUrl);
         dispatcher.forward(request, response);
+
+    }
+
+    /**
+     * Convert JSON response string into Calories objects to get the calories burned value
+     *
+     * @param responseFromREST the response from rest
+     * @return Calculation result object
+     */
+    public Calculation1 getCalculation1(String responseFromREST, Calculations calculations) {
+        Calculation1 calcResult = null;
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        try {
+            calculations = objectMapper.readValue(responseFromREST, Calculations.class);
+            calcResult = calculations.getCalculation1();
+
+        } catch (JsonGenerationException jge) {
+            logger.info(jge);
+        } catch (JsonMappingException jme) {
+            logger.info(jme);
+        } catch (IOException ioe) {
+            logger.info(ioe);
+        }
+        return calcResult;
+
+    }
+
+    /**
+     * Gets calories if exercised more.
+     *
+     * @param responseFromREST the response from rest
+     * @param calculations     the calculations
+     * @return the calculation 2
+     */
+    public Calculation2 getCalculation2(String responseFromREST, Calculations calculations) {
+        Calculation2 calcResult = null;
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        try {
+            calculations = objectMapper.readValue(responseFromREST, Calculations.class);
+            calcResult = calculations.getCalculation2();
+
+        } catch (JsonGenerationException jge) {
+            logger.info(jge);
+        } catch (JsonMappingException jme) {
+            logger.info(jme);
+        } catch (IOException ioe) {
+            logger.info(ioe);
+        }
+        return calcResult;
 
     }
 }

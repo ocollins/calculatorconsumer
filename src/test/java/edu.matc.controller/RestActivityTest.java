@@ -3,8 +3,7 @@ package edu.matc.controller;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.matc.CaloriesCalculator.Activities;
-import edu.matc.CaloriesCalculator.Activity;
+import edu.matc.CaloriesCalculator.*;
 import org.apache.log4j.Logger;
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -37,19 +36,18 @@ public class RestActivityTest {
     public void getAllActivities() throws Exception {
         WebTarget target = client.target(url + "/list");
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        logger.info("response from the call to REST " + response);
-
+        //logger.info("response from the call to REST " + response);
 
         ObjectMapper objectMapper = new ObjectMapper();
         Activities activities = null;
-        Activity activity = null;
+        Activity testActivity = null;
         try {
             activities = objectMapper.readValue(response, Activities.class);
-            List<Activity> myList = activities.getActivities();
-            for(Activity anActivity : myList) {
-                logger.info("Activity from the list " + anActivity.getName());
-            }
-            activity = activities.getActivities().get(0);
+            //List<Activity> myList = activities.getActivities();
+//            for(Activity anActivity : myList) {
+//                logger.info("Activity from the list " + anActivity.getName());
+//            }
+            testActivity = activities.getActivities().get(0);
 
         } catch (JsonGenerationException jge) {
             logger.info(jge);
@@ -59,17 +57,40 @@ public class RestActivityTest {
             logger.info(ioe);
         }
 
-        assertEquals("Activity is not walking ", "walking", activity.getName());
+        assertEquals("Activity is not walking ", "walking", testActivity.getName());
         //logger.info("Returning all activities JSON " + activity.getName());
     }
 
     @Test
     public void getCaloriesBurnedText() throws Exception {
-        url = url + "/text/1/70/1.5";
+        url = url + "/json/1/70/1.5/kg";
         WebTarget target = client.target(url);
         String response = target.request().get(String.class);
         logger.info("Returning calories " + response);
 
+        Calculations calculations = null;
+        Calculation1 calculationForRequestedDuration = null;
+        Calculation2 calculationForDoubleTime = null;
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            calculations = objectMapper.readValue(response, Calculations.class);
+            calculationForRequestedDuration = calculations.getCalculation1();
+            logger.info("Returning calories " + calculationForRequestedDuration.getCaloriesBurned());
+
+            calculationForDoubleTime = calculations.getCalculation2();
+            logger.info("Returning calories " + calculationForDoubleTime.getCaloriesBurned());
+        } catch (JsonGenerationException jge) {
+            logger.info(jge);
+        } catch (JsonMappingException jme) {
+            logger.info(jme);
+        } catch (IOException ioe) {
+            logger.info(ioe);
+        }
+
+        double testCalories = 3.75;
+        double returnCalories = calculationForRequestedDuration.getCaloriesBurned();
+        assertEquals("Returned calories are not correct ", testCalories, returnCalories, 0);
     }
 
 //    @Test
