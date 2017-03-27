@@ -105,7 +105,7 @@
 <script>
     function resetForm() {
         document.getElementById("calories_form").reset();
-        document.getElementsByName("result_div").innerHTML = "";
+        document("result_div").innerHTML = "";
     }
 
 </script>

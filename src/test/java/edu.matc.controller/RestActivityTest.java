@@ -87,9 +87,9 @@ public class RestActivityTest {
             logger.info(ioe);
         }
 
-        double testCalories = 318.75;
-        double returnCalories = calculationForRequestedDuration.getCaloriesBurned();
-        assertEquals("Returned calories are not correct ", testCalories, returnCalories, 0);
+        int testCalories = 318;
+        int returnCalories = calculationForRequestedDuration.getCaloriesBurned();
+        assertEquals("Returned calories are not correct ", testCalories, returnCalories);
     }
 
 //    @Test

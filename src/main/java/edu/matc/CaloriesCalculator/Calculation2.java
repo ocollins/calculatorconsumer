@@ -7,16 +7,16 @@ import javax.annotation.Generated;
 public class Calculation2{
 
 	@JsonProperty("Calories Burned:")
-	private double caloriesBurned;
+	private int caloriesBurned;
 
 	@JsonProperty("Duration:")
 	private double duration;
 
-	public void setCaloriesBurned(double caloriesBurned){
+	public void setCaloriesBurned(int caloriesBurned){
 		this.caloriesBurned = caloriesBurned;
 	}
 
-	public double getCaloriesBurned(){
+	public int getCaloriesBurned(){
 		return caloriesBurned;
 	}
 

@@ -102,13 +102,6 @@
     <input type="button" id="reset_button" onclick="resetForm()" value="Reset"/>
 </div>
 
-<script>
-    function resetForm() {
-        document.getElementById("calories_form").reset();
-        document.getElementsByName("result_div").innerHTML = "";
-    }
-
-</script>
 
 <div id="footer_div">
     <img src="images/tennis_fit1.jpg" alt="Fitness Picture" id="tennis_fit1_image"></img>

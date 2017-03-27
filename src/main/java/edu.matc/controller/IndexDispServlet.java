@@ -63,7 +63,7 @@ public class IndexDispServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        //HttpSession session = request.getSession(true);
+        HttpSession session = request.getSession(true);
 
         //Call the service to get a list of all activities to populate the dropbox
         Client client = ClientBuilder.newClient();
@@ -81,7 +81,8 @@ public class IndexDispServlet extends HttpServlet {
         try {
             activities = objectMapper.readValue(restResponse, Activities.class);
             List<Activity> activityList = activities.getActivities();
-            request.setAttribute("activities", activityList);
+            //request.setAttribute("activities", activityList);
+            session.setAttribute("activities", activityList);
 
         } catch (JsonGenerationException jge) {
             logger.info(jge);
