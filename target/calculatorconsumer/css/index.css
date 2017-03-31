@@ -115,10 +115,8 @@ body {
 .result_p {
     text-align: center;
     padding: 10px;
-    /*float: left;*/
     border: solid 1px grey;
     border-radius: 10px;
-    /*margin-left: 30px;*/
     background-color: whitesmoke;
     width: 30%;
     margin: auto;
@@ -129,9 +127,17 @@ body {
     margin-left: 10px;
 }
 
+#reset_button_p {
+    margin-top: 40px;
+    text-align: center;
+}
+
 #reset_button {
-    margin: auto;
-    padding-top: 20px;
+    background-color: grey;
+    border-radius: 5px;
+    background-color: lightgrey;
+    padding: 7px;
+    font-weight: bold;
 }
 
 #footer_div {

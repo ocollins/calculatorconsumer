@@ -88,19 +88,31 @@
         </form>
     </div>
 </div>
+
+
 <div id="result_div">
     <c:if test="${not empty RequestedCaloriesResult}">
-        <p class="result_p_mess">You burned</p>
-        <p class="result_p">${RequestedCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
-        <p class="result_p_mess">If you exercise 20 more minutes you will burn</p>
-        <p class="result_p">${MoreCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
-
+        <form id="my_form">
+            <p class="result_p_mess">You burned</p>
+            <p class="result_p" id="result1">${RequestedCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
+            <p class="result_p_mess">If you exercise 20 more minutes you will burn</p>
+            <p class="result_p" id="result2">${MoreCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
+            <p id="reset_button_p"><input type="button" id="reset_button" value="Reset" onclick="myFunction()"/></p>
+         </form>
     </c:if>
 </div>
+<script>
+    function myFunction() {
+        document.getElementById("result1").innerHTML = "";
+        document.getElementById("result2").innerHTML = "";
+        sessionStorage.removeItem("RequestedCaloriesResult");
+        sessionStorage.removeItem("MoreCaloriesResult");
+        document.getElementById("result_div").style.display = "none";
+    }
+</script>
 
-<div id="reset_div">
-    <input type="button" id="reset_button" onclick="resetForm()" value="Reset"/>
-</div>
+
+
 
 
 <div id="footer_div">
