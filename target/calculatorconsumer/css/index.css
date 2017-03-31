@@ -1,5 +1,5 @@
 body {
-    padding: 10px 20px;
+    padding: 1rem 1.25rem;
     margin: 0;
     font-family: Tahoma, Geneva, sans-serif;
     background-color: rgb(232, 208, 148);
@@ -7,42 +7,42 @@ body {
 
 #title_header {
     text-align: center;
-    margin-top: 70px;
-    font-size: 60px;
+    margin-top: 4.4rem;
+    font-size: 3.75rem;
 }
 
 .titlebox{
     float:left;
-    padding:0 5px;
-    margin:-30px 0 0 30px;
+    padding:0 0.31rem;
+    margin:-1.8rem 0 0 1.8rem;
     background-color: rgb(232, 208, 148);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
 .content_div{
     border:2px solid grey;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     padding:15px;
     float: left;
     width: 30%;
-    margin-left: 5px;
-    font-size: 20px;
-    height: 200px;
+    margin-left: 0.312rem;
+    font-size: 1.25rem;
+    height: 12.5rem;
 }
 
 .content_div2{
     border:2px solid grey;
-    border-radius: 10px;
-    padding:15px;
+    border-radius: 0.63rem;
+    padding:1rem;
     float: left;
     width: 30%;
-    margin-left: 5px;
-    font-size: 20px;
-    height: 100px;
+    margin-left: 0.31rem;
+    font-size: 1.25rem;
+    height: 6.25rem;
 }
 #main_container_div {
-    padding-bottom: 30px;
+    padding-bottom: 2rem;
     width: 60%;
     margin: auto;
 }
@@ -57,7 +57,7 @@ body {
     width: 60%;
     margin: auto;
     clear: left;
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 
 #calories_form {
@@ -69,16 +69,16 @@ body {
 {
     float: left;
     width: 90%;
-    margin: 10px;
-    border-radius: 7px;
-    padding: 5px;
+    margin: 0.8rem;
+    border-radius: 0.43rem;
+    padding: 0.31rem;
 
 }
 
 #radio_div {
     clear: left;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 
 #genderf_radio, #genderm_radio {
@@ -86,16 +86,16 @@ body {
 }
 
 #activity_select, #duration_select {
-    margin-top: 35px;
+    margin-top: 2rem;
 
 }
 
 #submit_button {
     clear: left;
-    margin-top: 30px;
+    margin-top: 2rem;
     border-radius: 5px;
     background-color: lightgrey;
-    padding: 7px;
+    padding: 0.43rem;
     font-weight: bold;
 }
 
@@ -103,20 +103,20 @@ body {
     clear: left;
     margin: auto;
     width: 60%;
-    padding-top: 50px;
+    padding-top: 3.125rem;
 }
 
 .result_p_mess {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
 }
 
 .result_p {
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem;
     border: solid 1px grey;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: whitesmoke;
     width: 30%;
     margin: auto;
@@ -124,11 +124,11 @@ body {
 }
 
 #calories_span {
-    margin-left: 10px;
+    margin-left: 0.825rem;
 }
 
 #reset_button_p {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     text-align: center;
 }
 
@@ -136,7 +136,7 @@ body {
     background-color: grey;
     border-radius: 5px;
     background-color: lightgrey;
-    padding: 7px;
+    padding: 0.44rem;
     font-weight: bold;
 }
 
@@ -147,6 +147,6 @@ body {
 #tennis_fit1_image, #tennis_fit2_image, #dummy {
     width: 30%;
     float: left;
-    padding:8px;
+    padding:0.8rem;
 }
 
