@@ -67,12 +67,10 @@ public class CalculateDurationActionServlet extends HttpServlet {
         Double durationDouble = getDuration(responseFromREST, duration);
 
         //Format string to be displayed on the screen
-        String durationString = null;
-
-
+        String durationString = convertDurationToString(durationDouble);
 
         //Store duration string in context container
-        context.setAttribute("DurationResult",  getDuration(responseFromREST, duration));
+        context.setAttribute("DurationResult",  durationString);
 
         String responceurl = "/index.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceurl);
@@ -102,6 +100,22 @@ public class CalculateDurationActionServlet extends HttpServlet {
             logger.info(ioe);
         }
         return durationResult;
+
+    }
+
+    public String convertDurationToString(Double durationDouble) {
+        int durationHours= durationDouble.intValue();
+        Double durationDecimal = durationDouble - durationHours;
+        long durationMinutes = Math.round(60 * durationDecimal);
+
+        if(durationMinutes == 0) {
+            return "You would have to exercise for " + durationHours;
+        } else if (durationHours == 0){
+            return "You would have to exercise for " + durationMinutes + " minutes";
+        } else {
+            return "You would have to exercise for " + durationHours + " hours and " + durationMinutes + " minutes";
+        }
+
 
     }
 

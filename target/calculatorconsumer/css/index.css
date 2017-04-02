@@ -98,7 +98,7 @@ body {
     font-weight: bold;
 }
 
-#result_div {
+#result_div, #result_div2 {
     clear: left;
     margin: auto;
     width: 60%;

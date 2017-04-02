@@ -119,8 +119,8 @@
 <div id="result_div2">
     <c:if test="${not empty DurationResult}">
         <form id="duration_result_form">
-            <p class="result_p_mess">You will have to exercise for</p>
-            <p class="result_p" id="result3">${DurationResult} <span id="calories_span"></span></p>
+            <input type="text" name="" value = "${DurationResult}"/>
+            <input type="reset" />
         </form>
     </c:if>
 </div>
