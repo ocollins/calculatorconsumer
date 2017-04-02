@@ -44,15 +44,6 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
         //Create context container
         ServletContext context = getServletContext();
 
-//        //Remove the old session
-//        HttpSession session = request.getSession(true);
-//        session.invalidate();
-//
-//        //Create new session
-//        session = request.getSession(true);
-//        ObjectMapper mapper = new ObjectMapper();
-//        Response obj = mapper.readValue(, Staff.class);
-
         logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Calories action servlet");
         //Get info from the user
         int weight = Integer.parseInt(request.getParameter("weight_text"));
@@ -78,8 +69,8 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
         //and store in context container
         context.setAttribute("MoreCaloriesResult",  getCalculation2(responseFromREST, calculations));
 
-        String responceUrl = "/index.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceUrl);
+        String responceurl = "/index.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceurl);
         dispatcher.forward(request, response);
 
     }

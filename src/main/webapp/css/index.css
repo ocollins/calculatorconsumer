@@ -52,7 +52,7 @@ body {
 
 }
 
-#user_info_div {
+#user_info_div, #user_info_div2 {
     text-align: center;
     width: 60%;
     margin: auto;
@@ -62,10 +62,9 @@ body {
 
 #calories_form {
     clear: left;
-
 }
 
-#weight_text, #activity_select, #duration_select
+#weight_text, #activity_select, #duration_select, #calories_text
 {
     float: left;
     width: 90%;

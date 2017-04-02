@@ -49,24 +49,11 @@
 
     <div id="user_info_div">
         <form action="calculateCaloriesActionServlet" id="calories_form" method="get">
-            <div class="content_div2">
-                <div class="titlebox">Enter your weight</div>
-                <p class="info_p">
-                    <input type="radio" name="weight_unit" value="lb" checked> Pounds
-                    <input type="radio" name="weight_unit" value="kg"> Kilograms<br>
-                    <input type="text" name="weight_text" id="weight_text" value="" required>
-                </p>
-            </div>
-            <div class="content_div2">
-                <div class="titlebox">Select activity</div>
-                <p class="info_p">
-                    <select id="activity_select" name="activity_select">
-                        <c:forEach var="activity" items="${activities}">
-                            <option value="${activity.id}">${activity.name}</option>
-                        </c:forEach>
-                    </select>
-                </p>
-            </div>
+            <%--enter weight --%>
+            <c:import url="weight.jsp"></c:import>
+                <%--select activity --%>
+            <c:import url="activity.jsp"></c:import>
+
             <div class="content_div2">
                 <div class="titlebox">Select duration</div>
                 <p class="info_p">
@@ -93,7 +80,7 @@
 
 <div id="result_div">
     <c:if test="${not empty RequestedCaloriesResult}">
-        <form id="my_form">
+        <form id="calories_result_form">
             <p class="result_p_mess">You burned</p>
             <p class="result_p" id="result1">${RequestedCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
             <p class="result_p_mess">If you exercise 20 more minutes you will burn</p>
@@ -102,6 +89,7 @@
          </form>
     </c:if>
 </div>
+
 <script>
     function myFunction() {
         document.getElementById("result1").innerHTML = "";
@@ -112,9 +100,30 @@
     }
 </script>
 
+<div id="user_info_div2">
+    <form action="calculateDurationActionServlet" id="duration_form" method="get">
+        <%--enter weight --%>
+        <c:import url="weight.jsp"></c:import>
+        <%--select activity --%>
+        <c:import url="activity.jsp"></c:import>
+            <div class="content_div2">
+                <div class="titlebox">Enter calories you wish to burn</div>
+                <p class="info_p">
+                    <input type="text" name="calories_text" id="calories_text" value="" required>
+                </p>
+            </div>
+            <input type="submit" id="submit_button" value="Calculate Duration">
+    </form>
+</div>
 
-
-
+<div id="result_div2">
+    <c:if test="${not empty DurationResult}">
+        <form id="duration_result_form">
+            <p class="result_p_mess">You will have to exercise for</p>
+            <p class="result_p" id="result3">${DurationResult} <span id="calories_span"></span></p>
+        </form>
+    </c:if>
+</div>
 
 <div id="footer_div">
     <img src="images/tennis_fit1.jpg" alt="Fitness Picture" id="tennis_fit1_image"></img>

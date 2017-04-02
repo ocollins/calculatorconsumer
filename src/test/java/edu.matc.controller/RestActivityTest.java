@@ -24,17 +24,19 @@ import java.util.List;
 public class RestActivityTest {
     private final Logger logger = Logger.getLogger(this.getClass());
     Client client;
-    String url;
+    String url1;
+    String url2;
 
     @Before
     public void setup() {
         client = ClientBuilder.newClient();
-        url = "http://localhost:8080/CaloriesCalculator/activities";
+        url1 = "http://localhost:8080/CaloriesCalculator/activities";
+        url2 = "http://localhost:8080/CaloriesCalculator/duration";
     }
 
     @Test
     public void getAllActivities() throws Exception {
-        WebTarget target = client.target(url + "/list");
+        WebTarget target = client.target(url1 + "/list");
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
         //logger.info("response from the call to REST " + response);
 
@@ -43,10 +45,6 @@ public class RestActivityTest {
         Activity testActivity = null;
         try {
             activities = objectMapper.readValue(response, Activities.class);
-            //List<Activity> myList = activities.getActivities();
-//            for(Activity anActivity : myList) {
-//                logger.info("Activity from the list " + anActivity.getName());
-//            }
             testActivity = activities.getActivities().get(0);
 
         } catch (JsonGenerationException jge) {
@@ -62,8 +60,8 @@ public class RestActivityTest {
 
     @Test
     public void getCaloriesBurnedJSON() throws Exception {
-        url = url + "/json/1/85/1.5/kg";
-        WebTarget target = client.target(url);
+        url1 = url1 + "/json/1/85/1.5/kg";
+        WebTarget target = client.target(url1);
         String response = target.request().get(String.class);
         logger.info("Returning calories " + response);
 
@@ -92,17 +90,24 @@ public class RestActivityTest {
         assertEquals("Returned calories are not correct ", testCalories, returnCalories);
     }
 
-//    @Test
-//    public void getCaloriesBurnedJSON() throws Exception {
-//        url = url + "/json/1/70/1.5";
-//        WebTarget target = client.target(url);
-//        String response = target.request().get(String.class);
-//        ObjectMapper mapper = new ObjectMapper();
-//        Response obj = mapper.readValue(response, Response.class);
-//        String normalView = mapper.writerWithView(Views.Normal.class).writeValueAsString(staff);
-//
-//        logger.info("Returning calories " + response);
-//    }
+    @Test
+    public void getDurationText() throws Exception {
+        url2 = url2 + "/text/1/85/300/kg";
+        WebTarget target = client.target(url2);
+        logger.info(url2);
+        String response = target.request().get(String.class);
+        logger.info("Returning text duration " + response);
+    }
+
+    @Test
+    public void getDurationJSON() throws Exception {
+        url2 = url2 + "/json/1/85/300/kg";
+        WebTarget target = client.target(url2);
+        logger.info(url2);
+        String response = target.request().get(String.class);
+        logger.info("Returning JSON duration " + response);
+    }
+
 
     @Test
     public void getCaloriesBurnedHTML() throws Exception {
