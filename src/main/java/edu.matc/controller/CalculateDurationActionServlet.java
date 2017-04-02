@@ -17,6 +17,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -44,7 +45,8 @@ public class CalculateDurationActionServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //Create context container
-        ServletContext context = getServletContext();
+        //ServletContext context = getServletContext();
+        HttpSession session = request.getSession(true);
 
         logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Duration action servlet");
         //Get info from the user
@@ -70,7 +72,7 @@ public class CalculateDurationActionServlet extends HttpServlet {
         String durationString = convertDurationToString(durationDouble);
 
         //Store duration string in context container
-        context.setAttribute("DurationResult",  durationString);
+        session.setAttribute("DurationResult",  durationString);
 
         String responceurl = "/index.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceurl);

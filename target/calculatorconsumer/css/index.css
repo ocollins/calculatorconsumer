@@ -7,7 +7,7 @@ body {
 
 #title_header {
     text-align: center;
-    margin-top: 4.4rem;
+    margin-top: 1.4rem;
     font-size: 3.75rem;
 }
 
@@ -77,21 +77,21 @@ body {
 #radio_div {
     clear: left;
     margin: auto;
-    padding-top: 2rem;
+    padding-top: 1.8rem;
 }
 
 #genderf_radio, #genderm_radio {
     clear: left;
 }
 
-#activity_select, #duration_select {
-    margin-top: 2rem;
+#activity_select, #duration_select, #calories_text {
+    margin-top: 2.5rem;
 
 }
 
 #submit_button {
     clear: left;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 5px;
     background-color: lightgrey;
     padding: 0.43rem;
@@ -126,12 +126,12 @@ body {
     margin-left: 0.825rem;
 }
 
-#reset_button_p {
+.reset_button_p {
     margin-top: 2.5rem;
     text-align: center;
 }
 
-#reset_button {
+.reset_button {
     background-color: grey;
     border-radius: 5px;
     background-color: lightgrey;

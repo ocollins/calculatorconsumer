@@ -80,25 +80,16 @@
 
 <div id="result_div">
     <c:if test="${not empty RequestedCaloriesResult}">
-        <form id="calories_result_form">
+        <form id="calories_result_form" action="cleanupServlet">
             <p class="result_p_mess">You burned</p>
             <p class="result_p" id="result1">${RequestedCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
             <p class="result_p_mess">If you exercise 20 more minutes you will burn</p>
             <p class="result_p" id="result2">${MoreCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
-            <p id="reset_button_p"><input type="button" id="reset_button" value="Reset" onclick="myFunction()"/></p>
-         </form>
+            <p class="reset_button_p"><input type="submit" class="reset_button" value="Reset"/></p>
+
+        </form>
     </c:if>
 </div>
-
-<script>
-    function myFunction() {
-        document.getElementById("result1").innerHTML = "";
-        document.getElementById("result2").innerHTML = "";
-        sessionStorage.removeItem("RequestedCaloriesResult");
-        sessionStorage.removeItem("MoreCaloriesResult");
-        document.getElementById("result_div").style.display = "none";
-    }
-</script>
 
 <div id="user_info_div2">
     <form action="calculateDurationActionServlet" id="duration_form" method="get">
@@ -118,9 +109,9 @@
 
 <div id="result_div2">
     <c:if test="${not empty DurationResult}">
-        <form id="duration_result_form">
-            <input type="text" name="" value = "${DurationResult}"/>
-            <input type="reset" />
+        <form id="duration_result_form" action="cleanupServlet">
+            <p class="result_p" id="result3">${DurationResult}</p>
+            <p class="reset_button_p"><input type="submit" class="reset_button" value="Reset"/></p>
         </form>
     </c:if>
 </div>

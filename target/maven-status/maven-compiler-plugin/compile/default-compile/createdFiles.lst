@@ -3,6 +3,7 @@ edu/matc/CaloriesCalculator/Duration.class
 edu/matc/controller/CalculateCaloriesActionServlet.class
 edu/matc/CaloriesCalculator/Calculations.class
 edu/matc/CaloriesCalculator/Calculation1.class
+edu/matc/controller/CleanupServlet.class
 edu/matc/CaloriesCalculator/Activity.class
 edu/matc/controller/CalculateDurationActionServlet.class
 edu/matc/CaloriesCalculator/Activities.class

@@ -15,6 +15,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -41,13 +42,15 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //Create context container
-        ServletContext context = getServletContext();
+        //Create session container
+        HttpSession session = request.getSession(true);
 
         logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Calories action servlet");
         //Get info from the user
         int weight = Integer.parseInt(request.getParameter("weight_text"));
+        session.setAttribute("Weight", weight);
         double duration = Double.parseDouble(request.getParameter("duration_select"));
+        session.setAttribute("Duration", duration);
         int activity = Integer.parseInt(request.getParameter("activity_select"));
         String unit = request.getParameter("weight_unit");
 
@@ -63,14 +66,14 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
 
         //Conver to Calculations POJOs and get calories result for the
         //requested duration and store in context container
-        context.setAttribute("RequestedCaloriesResult",  getCalculation1(responseFromREST, calculations));
+        session.setAttribute("RequestedCaloriesResult",  getCalculation1(responseFromREST, calculations));
 
         //Conver to Calculations POJOs and get calories result if exercised more
         //and store in context container
-        context.setAttribute("MoreCaloriesResult",  getCalculation2(responseFromREST, calculations));
+        session.setAttribute("MoreCaloriesResult",  getCalculation2(responseFromREST, calculations));
 
-        String responceurl = "/index.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceurl);
+        String responceUrl = "/index.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceUrl);
         dispatcher.forward(request, response);
 
     }
