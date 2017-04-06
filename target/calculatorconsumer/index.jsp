@@ -23,38 +23,39 @@
 
     <div id="main_container_div">
         <h2 id="title_header">Calories Burned Calculator</h2>
-        <div class="content_div">
-            <div class="titlebox">What are calories?</div>
-            <p class="info_p">A calorie is a measure of energy, just as a pound is a measure of weight
-                and a mile is a measure of distance. So the amount of energy you exert in
-                doing an activity is measured by the calories burn rate.
-            </p>
+        <div class="outer_div">
+            <div class="content_div">
+                <div class="titlebox">What are calories?</div>
+                <p class="info_p">A calorie is a measure of energy, just as a pound is a measure of weight
+                    and a mile is a measure of distance. So the amount of energy you exert in
+                   doing an activity is measured by the calories burn rate.
+                </p>
+            </div>
+            <div class="content_div">
+                <div class="titlebox">How to burn calories?</div>
+                <p class="info_p"> That's easy, just be alive! Your body is constantly burning calories to keep
+                  your body functioning. To burn more calories, do more activities, and the more
+                 strenuous the activity the greater the calorie burn.
+                </p>
+            </div>
+            <div class="content_div">
+               <div class="titlebox">How many calories did you burn?</div>
+              <p class="info_p"> Count how many calories you burn doing your favorite activities or how
+                  long you should do an activity to lose weight. Enter your weight in kilograms or pounds, and number
+                    of minutes for any of the exercise you do.
+              </p>
+            </div>
         </div>
-        <div class="content_div">
-            <div class="titlebox">How to burn calories?</div>
-            <p class="info_p"> That's easy, just be alive! Your body is constantly burning calories to keep
-                your body functioning. To burn more calories, do more activities, and the more
-                strenuous the activity the greater the calorie burn.
-            </p>
-        </div>
-        <div class="content_div">
-            <div class="titlebox">How many calories did you burn?</div>
-            <p class="info_p"> Count how many calories you burn doing your favorite activities or how
-                long you should do an activity to lose weight. Enter your weight in kilograms or pounds, and number
-                of minutes for any of the exercise you do.
-            </p>
-        </div>
-    </div>
 
 
-    <div id="user_info_div">
+    <div class="outer_div">
         <form action="calculateCaloriesActionServlet" id="calories_form" method="get">
             <%--enter weight --%>
             <c:import url="weight.jsp"></c:import>
                 <%--select activity --%>
             <c:import url="activity.jsp"></c:import>
 
-            <div class="content_div2">
+            <div class="content_div">
                 <div class="titlebox">Select duration</div>
                 <p class="info_p">
                     <select id="duration_select" name="duration_select">
@@ -91,13 +92,13 @@
     </c:if>
 </div>
 
-<div id="user_info_div2">
+<div class="outer_div">
     <form action="calculateDurationActionServlet" id="duration_form" method="get">
         <%--enter weight --%>
         <c:import url="weight.jsp"></c:import>
         <%--select activity --%>
         <c:import url="activity.jsp"></c:import>
-            <div class="content_div2">
+            <div class="content_div">
                 <div class="titlebox">Enter calories you wish to burn</div>
                 <p class="info_p">
                     <input type="text" name="calories_text" id="calories_text" value="" required>
@@ -114,6 +115,7 @@
             <p class="reset_button_p"><input type="submit" class="reset_button" value="Reset"/></p>
         </form>
     </c:if>
+</div>
 </div>
 
 <div id="footer_div">

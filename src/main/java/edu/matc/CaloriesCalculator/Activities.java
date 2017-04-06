@@ -7,14 +7,14 @@ import javax.annotation.Generated;
 @Generated("com.robohorse.robopojogenerator")
 public class Activities{
 
-	@JsonProperty("activities")
-	private List<Activity> activities;
+	@JsonProperty("Activities")
+	private List<ActivitiesItem> activities;
 
-	public void setActivities(List<Activity> activities){
+	public void setActivities(List<ActivitiesItem> activities){
 		this.activities = activities;
 	}
 
-	public List<Activity> getActivities(){
+	public List<ActivitiesItem> getActivities(){
 		return activities;
 	}
 

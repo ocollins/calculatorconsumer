@@ -2,7 +2,7 @@ package edu.matc.controller;
 
 /**
  * Display servlet, wich will call index.jsp page
- * It will call /activities resource to retrieve
+ * It will call /yies resource to retrieve
  * a list of activities so the user can select one.
  * @author Calories Calculator team
  */
@@ -11,20 +11,7 @@ import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.CaloriesCalculator.Activities;
-import edu.matc.CaloriesCalculator.Activity;
-import org.apache.log4j.Logger;
-
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.io.IOException;
-
-
-
+import edu.matc.CaloriesCalculator.ActivitiesItem;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -34,11 +21,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.io.*;
+
 import java.util.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -77,10 +61,10 @@ public class IndexDispServlet extends HttpServlet {
         //Map to the Activities POJO
         ObjectMapper objectMapper = new ObjectMapper();
         Activities activities = null;
-        Activity activity = null;
+        ActivitiesItem activity = null;
         try {
             activities = objectMapper.readValue(restResponse, Activities.class);
-            List<Activity> activityList = activities.getActivities();
+            List<ActivitiesItem> activityList = activities.getActivities();
             //request.setAttribute("activities", activityList);
             session.setAttribute("activities", activityList);
 

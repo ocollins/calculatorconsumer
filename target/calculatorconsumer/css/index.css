@@ -28,40 +28,44 @@ body {
     width: 30%;
     margin-left: 0.312rem;
     font-size: 1.25rem;
-    height: 12.5rem;
+    /*height: 12.5rem;*/
 }
 
-.content_div2{
-    border:2px solid grey;
-    border-radius: 0.63rem;
-    padding:1rem;
-    float: left;
-    width: 30%;
-    margin-left: 0.31rem;
-    font-size: 1.25rem;
-    height: 6.25rem;
-}
+/*.content_div2{*/
+    /*border:2px solid grey;*/
+    /*border-radius: 0.63rem;*/
+    /*padding:1rem;*/
+    /*float: left;*/
+    /*width: 30%;*/
+    /*margin-left: 0.31rem;*/
+    /*font-size: 1.25rem;*/
+    /*height: 6.25rem;*/
+/*}*/
 #main_container_div {
     padding-bottom: 2rem;
     width: 60%;
     margin: auto;
 }
 
-#instructions_div {
-    margin: auto;
-
+.outer_div {
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#user_info_div, #user_info_div2 {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    clear: left;
-    padding-top: 2rem;
-}
+/*#user_info_div, #user_info_div2 {*/
+    /*text-align: center;*/
+    /*width: 60%;*/
+    /*margin: auto;*/
+    /*clear: left;*/
+    /*padding-top: 2rem;*/
+/*}*/
 
-#calories_form {
-    clear: left;
+#calories_form, #duration_form {
+    /*clear: left;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #weight_text, #activity_select, #duration_select, #calories_text
