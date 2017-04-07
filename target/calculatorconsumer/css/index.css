@@ -26,7 +26,8 @@ body {
     padding:15px;
     float: left;
     width: 30%;
-    margin-left: 0.312rem;
+    /*margin-left: 0.312rem;*/
+    margin: 1.5rem .325rem 1.5rem .325rem;
     font-size: 1.25rem;
     /*height: 12.5rem;*/
 }
@@ -47,7 +48,7 @@ body {
     margin: auto;
 }
 
-.outer_div {
+.outer_div, .user_info_div {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -63,9 +64,10 @@ body {
 
 #calories_form, #duration_form {
     /*clear: left;*/
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 #weight_text, #activity_select, #duration_select, #calories_text
@@ -93,13 +95,14 @@ body {
 
 }
 
-#submit_button {
+.submit_button {
     clear: left;
-    margin-top: 1rem;
+    margin: auto;
     border-radius: 5px;
     background-color: lightgrey;
     padding: 0.43rem;
     font-weight: bold;
+    display: block;
 }
 
 #result_div, #result_div2 {

@@ -48,74 +48,78 @@
         </div>
 
 
-    <div class="outer_div">
-        <form action="calculateCaloriesActionServlet" id="calories_form" method="get">
+        <div class="outer_div">
+            <form action="calculateCaloriesActionServlet" id="calories_form" method="get">
+                <div class="user_info_div">
             <%--enter weight --%>
-            <c:import url="weight.jsp"></c:import>
+                <c:import url="weight.jsp"></c:import>
                 <%--select activity --%>
-            <c:import url="activity.jsp"></c:import>
+                <c:import url="activity.jsp"></c:import>
 
-            <div class="content_div">
-                <div class="titlebox">Select duration</div>
-                <p class="info_p">
-                    <select id="duration_select" name="duration_select">
-                        <option value="0.5">half hour</option>
-                        <option value="1">one hour</option>
-                        <option value="1.5">hour and half</option>
-                        <option value="2.0">two hours</option>
-                        <option value="2.5">two and half hours</option>
-                        <option value="3.0">three hours</option>
-                        <option value="3.5">three and half hours</option>
-                        <option value="4.0">four hours</option>
-                        <option value="4.5">four and half hours</option>
-                        <option value="5.0">five hours</option>
-                        <option value="6.5">five and half hours</option>
-                    </select>
-                </p>
+                <div class="content_div">
+                    <div class="titlebox">Select duration</div>
+                    <p class="info_p">
+                        <select id="duration_select" name="duration_select">
+                            <option value="0.5">half hour</option>
+                            <option value="1">one hour</option>
+                            <option value="1.5">hour and half</option>
+                            <option value="2.0">two hours</option>
+                            <option value="2.5">two and half hours</option>
+                            <option value="3.0">three hours</option>
+                            <option value="3.5">three and half hours</option>
+                            <option value="4.0">four hours</option>
+                            <option value="4.5">four and half hours</option>
+                            <option value="5.0">five hours</option>
+                            <option value="6.5">five and half hours</option>
+                        </select>
+                    </p>
+                </div>
+                </div>
+                <input type="submit" class="submit_button" value="Calculate Calories">
+            </form>
+        </div>
+
+
+    <div id="result_div">
+        <c:if test="${not empty RequestedCaloriesResult}">
+            <form id="calories_result_form" action="cleanupServlet">
+                <p class="result_p_mess">You burned</p>
+                <p class="result_p" id="result1">${RequestedCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
+                <p class="result_p_mess">If you exercise 20 more minutes you will burn</p>
+                <p class="result_p" id="result2">${MoreCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
+                <p class="reset_button_p"><input type="submit" class="reset_button" value="Reset"/></p>
+
+            </form>
+        </c:if>
+    </div>
+
+    <div class="outer_div">
+        <form action="calculateDurationActionServlet" id="duration_form" method="get">
+            <div class="user_info_div">
+         <%--enter weight --%>
+            <c:import url="weight.jsp"></c:import>
+        <%--select activity --%>
+            <c:import url="activity.jsp"></c:import>
+                <div class="content_div">
+                    <div class="titlebox">Enter calories you wish to burn</div>
+                        <p class="info_p">
+                        <input type="text" name="calories_text" id="calories_text" value="" required>
+                    </p>
+                </div>
             </div>
-            <input type="submit" id="submit_button" value="Calculate Calories">
+            <input type="submit" class="submit_button" value="Calculate Duration">
         </form>
     </div>
-</div>
 
-
-<div id="result_div">
-    <c:if test="${not empty RequestedCaloriesResult}">
-        <form id="calories_result_form" action="cleanupServlet">
-            <p class="result_p_mess">You burned</p>
-            <p class="result_p" id="result1">${RequestedCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
-            <p class="result_p_mess">If you exercise 20 more minutes you will burn</p>
-            <p class="result_p" id="result2">${MoreCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
-            <p class="reset_button_p"><input type="submit" class="reset_button" value="Reset"/></p>
-
-        </form>
-    </c:if>
-</div>
-
-<div class="outer_div">
-    <form action="calculateDurationActionServlet" id="duration_form" method="get">
-        <%--enter weight --%>
-        <c:import url="weight.jsp"></c:import>
-        <%--select activity --%>
-        <c:import url="activity.jsp"></c:import>
-            <div class="content_div">
-                <div class="titlebox">Enter calories you wish to burn</div>
-                <p class="info_p">
-                    <input type="text" name="calories_text" id="calories_text" value="" required>
-                </p>
-            </div>
-            <input type="submit" id="submit_button" value="Calculate Duration">
-    </form>
-</div>
-
-<div id="result_div2">
-    <c:if test="${not empty DurationResult}">
-        <form id="duration_result_form" action="cleanupServlet">
-            <p class="result_p" id="result3">${DurationResult}</p>
-            <p class="reset_button_p"><input type="submit" class="reset_button" value="Reset"/></p>
-        </form>
-    </c:if>
-</div>
+    <div id="result_div2">
+        <c:if test="${not empty DurationResult}">
+            <form id="duration_result_form" action="cleanupServlet">
+                <p class="result_p" id="result3">${DurationResult}</p>
+                <p class="reset_button_p"><input type="submit" class="reset_button" value="Reset"/></p>
+            </form>
+        </c:if>
+    </div>
+    </div>
 </div>
 
 <div id="footer_div">

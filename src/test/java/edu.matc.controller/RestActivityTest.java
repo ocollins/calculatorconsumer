@@ -41,6 +41,7 @@ public class RestActivityTest {
         WebTarget target = client.target(url1 + "/list");
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
         logger.info("response from the call to REST " + response);
+        //logger.info("status " + target.request().);
 
         ObjectMapper objectMapper = new ObjectMapper();
         Activities activities = null;
