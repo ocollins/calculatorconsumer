@@ -36,34 +36,35 @@ public class RestActivityTest {
         //url1 = "http://localhost:8080/CaloriesCalculator/activities/list";
     }
 
-    @Test
-    public void getAllActivities() throws Exception {
-        WebTarget target = client.target(url1 + "/list");
-        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        logger.info("response from the call to REST " + response);
-        //logger.info("status " + target.request().);
-
-        ObjectMapper objectMapper = new ObjectMapper();
-        Activities activities = null;
-        ActivitiesItem testActivity = null;
-        //Response testActivity;
-        try {
-            activities = objectMapper.readValue(response, Activities.class);
-            testActivity = activities.getActivities().get(0);
-            getCaloriesBurnedJSON();
-            logger.info("Testing activities " + testActivity.getActivityTitle());
-
-
-        } catch (JsonGenerationException jge) {
-            logger.info(jge);
-        } catch (JsonMappingException jme) {
-            logger.info(jme);
-        } catch (IOException ioe) {
-            logger.info(ioe);
-        }
-
-        //assertEquals("Activity is not walking ", "walking", testActivity.getName());
-    }
+//    @Test
+//    public void getAllActivities() throws Exception {
+//        WebTarget target = client.target(url1 + "/list");
+//        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
+//        logger.info("response from the call to REST " + response);
+//        //logger.info("status " + target.request().);
+//
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        Activities activities = null;
+//        ActivitiesItem testActivity = null;
+//        //Response testActivity;
+//        try {
+//            activities = objectMapper.readValue(response, Activities.class);
+//            testActivity = activities.getActivities().get(0);
+//            getCaloriesBurnedJSON();
+//            logger.info("Testing activities " + testActivity.getActivityTitle());
+//
+//
+//        } catch (JsonGenerationException jge) {
+//            logger.info(jge);
+//        } catch (JsonMappingException jme) {
+//            logger.info(jme);
+//        } catch (IOException ioe) {
+//            logger.info(ioe);
+//        }
+//
+//        assertEquals("Activity is not walking ", "walking", testActivity.getActivityTitle());
+//        assertEquals("Activity ID is not 1 ", "1", testActivity.getActivityID());
+//    }
 
     @Test
     public void getCaloriesBurnedJSON() throws Exception {
@@ -99,9 +100,9 @@ public class RestActivityTest {
 
     @Test
     public void getDurationText() throws Exception {
-        url2 = url2 + "/text/1/85/300/kg";
+        url2 = url2 + "/text/1/54/272/kg";
         WebTarget target = client.target(url2);
-        logger.info(url2);
+        logger.info("Accessing url " + url2);
         String response = target.request().get(String.class);
         logger.info("Returning text duration " + response);
     }
@@ -112,7 +113,14 @@ public class RestActivityTest {
         WebTarget target = client.target(url2);
         logger.info(url2);
         String response = target.request().get(String.class);
-        logger.info("Returning JSON duration " + response);
+        logger.info(response);
+
+        DurationCalculation durationCalculation = new DurationCalculation();
+
+        Duration duration = new Duration();
+        Double responseDouble = durationCalculation.getDuration(response, duration);
+        String responseString = durationCalculation.convertDurationToString(responseDouble);
+        logger.info("Returning JSON duration " + responseString);
     }
 
 

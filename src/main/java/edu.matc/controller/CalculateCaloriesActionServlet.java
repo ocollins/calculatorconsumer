@@ -45,7 +45,6 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
         //Create session container
         HttpSession session = request.getSession(true);
 
-        logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Calories action servlet");
         //Get info from the user
         int weight = Integer.parseInt(request.getParameter("weight_text"));
         session.setAttribute("Weight", weight);
@@ -80,7 +79,6 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
 
     /**
      * Convert JSON response string into Calories objects to get the calories burned value
-     *
      * @param responseFromREST the response from rest
      * @return Calculation result object
      */
@@ -105,7 +103,6 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
 
     /**
      * Gets calories if exercised more.
-     *
      * @param responseFromREST the response from rest
      * @param calculations     the calculations
      * @return the calculation 2

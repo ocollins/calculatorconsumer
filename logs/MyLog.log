@@ -1539,3 +1539,174 @@ running		12.0
 2017-04-07 12:22:26,944 309  [main] INFO  edu.matc.controller.RestActivityTest  - Testing activities walking
 2017-04-07 12:22:37,245 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
 2017-04-07 12:22:39,864 2619 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 20:48:22,711 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 20:48:22,994 283  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 20:48:22,994 283  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 20:48:22,995 284  [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 20:48:23,079 368  [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration {"Duration:":1.41}
+2017-04-07 20:48:23,080 369  [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/text/1/85/300/kg
+2017-04-07 20:48:23,145 434  [main] INFO  edu.matc.controller.RestActivityTest  - Returning text duration Duration: 1.41
+2017-04-07 20:48:23,180 469  [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 20:48:23,212 501  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 20:48:23,214 503  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 20:48:23,215 504  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 20:48:23,215 504  [main] INFO  edu.matc.controller.RestActivityTest  - Testing activities walking
+2017-04-07 20:48:39,389 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 20:48:43,848 4459 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 20:49:26,530 47141 [http-nio-8081-exec-4] INFO  edu.matc.controller.CalculateCaloriesActionServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Calories action servlet
+2017-04-07 20:49:26,534 47145 [http-nio-8081-exec-4] INFO  edu.matc.controller.CalculateCaloriesActionServlet  - http://localhost:8080/CaloriesCalculator/activities/json/1/120/2.0/lb
+2017-04-07 20:49:39,641 60252 [http-nio-8081-exec-6] INFO  edu.matc.controller.CleanupServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet
+2017-04-07 20:49:50,489 71100 [http-nio-8081-exec-8] INFO  edu.matc.controller.CalculateDurationActionServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Duration action servlet
+2017-04-07 20:49:50,490 71101 [http-nio-8081-exec-8] INFO  edu.matc.controller.CalculateDurationActionServlet  - http://localhost:8080/CaloriesCalculator/duration/json/1/120/272/lb
+2017-04-07 20:49:50,519 71130 [http-nio-8081-exec-8] INFO  edu.matc.controller.CalculateDurationActionServlet  - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "Duration:" (class edu.matc.CaloriesCalculator.Duration), not marked as ignorable (one known property: "Duration "])
+ at [Source: {"Duration:":1.99}; line: 1, column: 18] (through reference chain: edu.matc.CaloriesCalculator.Duration["Duration:"])
+2017-04-07 20:51:26,553 0    [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 20:51:26,724 171  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 20:51:26,741 188  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 20:51:26,741 188  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 20:51:26,741 188  [main] INFO  edu.matc.controller.RestActivityTest  - Testing activities walking
+2017-04-07 20:52:18,114 0    [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 20:52:18,398 284  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 20:52:18,417 303  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 20:52:18,417 303  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 20:52:18,417 303  [main] INFO  edu.matc.controller.RestActivityTest  - Testing activities walking
+2017-04-07 20:52:24,824 0    [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 20:52:25,234 410  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 20:52:25,265 441  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 20:52:25,265 441  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 20:52:25,265 441  [main] INFO  edu.matc.controller.RestActivityTest  - Testing activities walking
+2017-04-07 20:52:53,619 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 20:52:53,997 378  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 20:52:53,997 378  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 20:53:44,386 0    [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/text/1/54/272/kg
+2017-04-07 20:53:45,150 764  [main] INFO  edu.matc.controller.RestActivityTest  - Returning text duration Duration: 2.01
+2017-04-07 21:04:09,659 0    [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:05:46,383 0    [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:12:57,408 0    [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:12:58,137 729  [main] INFO  edu.matc.controller.DurationCalculation  - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "Duration:" (class edu.matc.CaloriesCalculator.Duration), not marked as ignorable (one known property: "Duration "])
+ at [Source: {"Duration:":1.41}; line: 1, column: 18] (through reference chain: edu.matc.CaloriesCalculator.Duration["Duration:"])
+2017-04-07 21:12:58,138 730  [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration 0.0
+2017-04-07 21:14:27,611 0    [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:14:28,081 470  [main] INFO  edu.matc.controller.RestActivityTest  - {"Duration:":1.41}
+2017-04-07 21:14:28,531 920  [main] INFO  edu.matc.controller.DurationCalculation  - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "Duration:" (class edu.matc.CaloriesCalculator.Duration), not marked as ignorable (one known property: "Duration "])
+ at [Source: {"Duration:":1.41}; line: 1, column: 18] (through reference chain: edu.matc.CaloriesCalculator.Duration["Duration:"])
+2017-04-07 21:14:28,531 920  [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration 0.0
+2017-04-07 21:16:26,102 0    [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:16:26,673 571  [main] INFO  edu.matc.controller.RestActivityTest  - {"Duration:":1.41}
+2017-04-07 21:16:27,271 1169 [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration 1.41
+2017-04-07 21:17:40,617 0    [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:17:41,349 732  [main] INFO  edu.matc.controller.RestActivityTest  - {"Duration:":1.41}
+2017-04-07 21:17:41,602 985  [main] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.41
+2017-04-07 21:17:41,602 985  [main] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:17:41,602 985  [main] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 25
+2017-04-07 21:17:41,602 985  [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration You would have to exercise for 1 hours and 25 minutes
+2017-04-07 21:18:17,426 0    [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:18:18,068 642  [main] INFO  edu.matc.controller.RestActivityTest  - {"Duration:":1.41}
+2017-04-07 21:18:18,510 1084 [main] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.41
+2017-04-07 21:18:18,510 1084 [main] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:18:18,510 1084 [main] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 25
+2017-04-07 21:18:18,510 1084 [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration You would have to exercise for 1 hours and 25 minutes
+2017-04-07 21:18:36,209 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 21:18:36,363 154  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 21:18:36,363 154  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 21:18:36,367 158  [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:18:36,387 178  [main] INFO  edu.matc.controller.RestActivityTest  - {"Duration:":1.41}
+2017-04-07 21:18:36,391 182  [main] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.41
+2017-04-07 21:18:36,391 182  [main] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:18:36,391 182  [main] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 25
+2017-04-07 21:18:36,393 184  [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration You would have to exercise for 1 hours and 25 minutes
+2017-04-07 21:18:36,394 185  [main] INFO  edu.matc.controller.RestActivityTest  - Accessing url http://localhost:8080/CaloriesCalculator/duration/text/1/54/272/kg
+2017-04-07 21:18:36,438 229  [main] INFO  edu.matc.controller.RestActivityTest  - Returning text duration Duration: 2.01
+2017-04-07 21:18:36,481 272  [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 21:18:36,504 295  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 21:18:36,509 300  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 21:18:36,509 300  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 21:18:36,509 300  [main] INFO  edu.matc.controller.RestActivityTest  - Testing activities walking
+2017-04-07 21:18:47,449 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 21:18:48,733 1284 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 21:19:01,610 14161 [http-nio-8081-exec-3] INFO  edu.matc.controller.CalculateDurationActionServlet  - http://localhost:8080/CaloriesCalculator/duration/json/1/120/272/lb
+2017-04-07 21:19:01,655 14206 [http-nio-8081-exec-3] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.99
+2017-04-07 21:19:01,655 14206 [http-nio-8081-exec-3] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:19:01,655 14206 [http-nio-8081-exec-3] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 59
+2017-04-07 21:19:18,782 31333 [http-nio-8081-exec-5] INFO  edu.matc.controller.CleanupServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet
+2017-04-07 21:21:21,354 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 21:21:21,507 153  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 21:21:21,507 153  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 21:21:21,509 155  [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:21:21,529 175  [main] INFO  edu.matc.controller.RestActivityTest  - {"Duration:":1.41}
+2017-04-07 21:21:21,533 179  [main] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.41
+2017-04-07 21:21:21,534 180  [main] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:21:21,534 180  [main] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 25
+2017-04-07 21:21:21,534 180  [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration You would have to exercise for 1 hour and 25 minutes
+2017-04-07 21:21:21,538 184  [main] INFO  edu.matc.controller.RestActivityTest  - Accessing url http://localhost:8080/CaloriesCalculator/duration/text/1/54/272/kg
+2017-04-07 21:21:21,568 214  [main] INFO  edu.matc.controller.RestActivityTest  - Returning text duration Duration: 2.01
+2017-04-07 21:21:21,610 256  [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 21:21:21,635 281  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 21:21:21,641 287  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 21:21:21,642 288  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 21:21:21,644 290  [main] INFO  edu.matc.controller.RestActivityTest  - Testing activities walking
+2017-04-07 21:21:32,763 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 21:21:34,108 1345 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 21:21:54,176 21413 [http-nio-8081-exec-1] INFO  edu.matc.controller.CalculateCaloriesActionServlet  - http://localhost:8080/CaloriesCalculator/activities/json/1/54/2.0/kg
+2017-04-07 21:22:08,786 36023 [http-nio-8081-exec-2] INFO  edu.matc.controller.CleanupServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet
+2017-04-07 21:22:25,205 52442 [http-nio-8081-exec-3] INFO  edu.matc.controller.CalculateCaloriesActionServlet  - http://localhost:8080/CaloriesCalculator/activities/json/1/130/3.0/lb
+2017-04-07 21:22:33,199 60436 [http-nio-8081-exec-4] INFO  edu.matc.controller.CleanupServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet
+2017-04-07 21:22:44,134 71371 [http-nio-8081-exec-5] INFO  edu.matc.controller.CalculateCaloriesActionServlet  - http://localhost:8080/CaloriesCalculator/activities/json/1/59/3.0/kg
+2017-04-07 21:22:54,728 81965 [http-nio-8081-exec-6] INFO  edu.matc.controller.CleanupServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet
+2017-04-07 21:23:17,067 104304 [http-nio-8081-exec-8] INFO  edu.matc.controller.CalculateCaloriesActionServlet  - http://localhost:8080/CaloriesCalculator/activities/json/2/170/1.0/lb
+2017-04-07 21:23:37,209 124446 [http-nio-8081-exec-9] INFO  edu.matc.controller.CleanupServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet
+2017-04-07 21:24:01,588 148825 [http-nio-8081-exec-1] INFO  edu.matc.controller.CalculateDurationActionServlet  - http://localhost:8080/CaloriesCalculator/duration/json/2/170/231/lb
+2017-04-07 21:24:01,618 148855 [http-nio-8081-exec-1] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.0
+2017-04-07 21:24:01,618 148855 [http-nio-8081-exec-1] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:24:01,618 148855 [http-nio-8081-exec-1] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 0
+2017-04-07 21:24:41,892 189129 [http-nio-8081-exec-3] INFO  edu.matc.controller.CleanupServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet
+2017-04-07 21:24:58,372 205609 [http-nio-8081-exec-4] INFO  edu.matc.controller.CalculateDurationActionServlet  - http://localhost:8080/CaloriesCalculator/duration/json/2/50/225/kg
+2017-04-07 21:24:58,394 205631 [http-nio-8081-exec-4] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.5
+2017-04-07 21:24:58,394 205631 [http-nio-8081-exec-4] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:24:58,394 205631 [http-nio-8081-exec-4] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 30
+2017-04-07 21:25:09,972 217209 [http-nio-8081-exec-5] INFO  edu.matc.controller.CleanupServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet
+2017-04-07 21:25:32,010 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 21:25:32,154 144  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 21:25:32,155 145  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 21:25:32,155 145  [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:25:32,179 169  [main] INFO  edu.matc.controller.RestActivityTest  - {"Duration:":1.41}
+2017-04-07 21:25:32,181 171  [main] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.41
+2017-04-07 21:25:32,181 171  [main] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:25:32,181 171  [main] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 25
+2017-04-07 21:25:32,181 171  [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration You would have to exercise for 1 hour and 25 minutes
+2017-04-07 21:25:32,182 172  [main] INFO  edu.matc.controller.RestActivityTest  - Accessing url http://localhost:8080/CaloriesCalculator/duration/text/1/54/272/kg
+2017-04-07 21:25:32,202 192  [main] INFO  edu.matc.controller.RestActivityTest  - Returning text duration Duration: 2.01
+2017-04-07 21:25:32,234 224  [main] INFO  edu.matc.controller.RestActivityTest  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 21:25:32,277 267  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 21:25:32,278 268  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 21:25:32,278 268  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 21:25:32,278 268  [main] INFO  edu.matc.controller.RestActivityTest  - Testing activities walking
+2017-04-07 21:25:44,114 0    [http-nio-8081-exec-6] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 21:25:45,420 1306 [http-nio-8081-exec-9] INFO  edu.matc.controller.IndexDispServlet  - response from the call to REST {"Activities":[{"activityID":"1","activityTitle":"walking"},{"activityID":"2","activityTitle":"volleyball"},{"activityID":"3","activityTitle":"calisthenics"},{"activityID":"4","activityTitle":"golf"},{"activityID":"5","activityTitle":"cycling"},{"activityID":"6","activityTitle":"dancing"},{"activityID":"7","activityTitle":"swimming"},{"activityID":"8","activityTitle":"tennis"},{"activityID":"9","activityTitle":"basketball"},{"activityID":"10","activityTitle":"soccer"},{"activityID":"11","activityTitle":"running"}]}
+2017-04-07 21:27:52,614 128500 [http-nio-8081-exec-3] INFO  edu.matc.controller.CalculateDurationActionServlet  - http://localhost:8080/CaloriesCalculator/duration/json/2/170/231/lb
+2017-04-07 21:27:52,682 128568 [http-nio-8081-exec-3] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.0
+2017-04-07 21:27:52,682 128568 [http-nio-8081-exec-3] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:27:52,683 128569 [http-nio-8081-exec-3] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 0
+2017-04-07 21:27:59,656 135542 [http-nio-8081-exec-4] INFO  edu.matc.controller.CleanupServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet
+2017-04-07 21:29:55,402 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 21:29:55,662 260  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 21:29:55,662 260  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 21:29:55,667 265  [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:29:55,709 307  [main] INFO  edu.matc.controller.RestActivityTest  - {"Duration:":1.41}
+2017-04-07 21:29:55,712 310  [main] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.41
+2017-04-07 21:29:55,712 310  [main] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:29:55,712 310  [main] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 25
+2017-04-07 21:29:55,712 310  [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration You would have to exercise for 1 hour and 25 minutes
+2017-04-07 21:29:55,713 311  [main] INFO  edu.matc.controller.RestActivityTest  - Accessing url http://localhost:8080/CaloriesCalculator/duration/text/1/54/272/kg
+2017-04-07 21:29:55,747 345  [main] INFO  edu.matc.controller.RestActivityTest  - Returning text duration Duration: 2.01
+2017-04-07 21:31:37,574 0    [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories {"Calculation 0:":{"Calories Burned:":159.375,"Duration:":0.75},"Calculation 1:":{"Calories Burned:":318.75,"Duration:":1.5},"Calculation 2:":{"Calories Burned:":389.5125,"Duration:":1.833}}
+2017-04-07 21:31:37,738 164  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 318
+2017-04-07 21:31:37,738 164  [main] INFO  edu.matc.controller.RestActivityTest  - Returning calories 389
+2017-04-07 21:31:37,739 165  [main] INFO  edu.matc.controller.RestActivityTest  - http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg
+2017-04-07 21:31:37,790 216  [main] INFO  edu.matc.controller.RestActivityTest  - {"Duration:":1.41}
+2017-04-07 21:31:37,797 223  [main] INFO  edu.matc.controller.DurationCalculation  - Duration double 1.41
+2017-04-07 21:31:37,798 224  [main] INFO  edu.matc.controller.DurationCalculation  - Duration hours 1
+2017-04-07 21:31:37,802 228  [main] INFO  edu.matc.controller.DurationCalculation  - Duration in minutes 25
+2017-04-07 21:31:37,805 231  [main] INFO  edu.matc.controller.RestActivityTest  - Returning JSON duration You would have to exercise for 1 hour and 25 minutes
+2017-04-07 21:31:37,807 233  [main] INFO  edu.matc.controller.RestActivityTest  - Accessing url http://localhost:8080/CaloriesCalculator/duration/text/1/54/272/kg
+2017-04-07 21:31:37,888 314  [main] INFO  edu.matc.controller.RestActivityTest  - Returning text duration Duration: 2.01

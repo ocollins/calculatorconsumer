@@ -26,6 +26,7 @@ import java.io.IOException;
 
 /**
  * Servlet to access CaloriesCalculator REST api
+ *
  * @author Olena Collins
  */
 @WebServlet(
@@ -48,7 +49,6 @@ public class CalculateDurationActionServlet extends HttpServlet {
         //ServletContext context = getServletContext();
         HttpSession session = request.getSession(true);
 
-        logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Duration action servlet");
         //Get info from the user
         int weight = Integer.parseInt(request.getParameter("weight_text"));
         int calories = Integer.parseInt(request.getParameter("calories_text"));
@@ -66,10 +66,11 @@ public class CalculateDurationActionServlet extends HttpServlet {
         //Conver to Duration POJOs and get duration result for the
         //requested calories
         Duration duration = null;
-        Double durationDouble = getDuration(responseFromREST, duration);
+        DurationCalculation durationCalculation = new DurationCalculation();
+        Double durationDouble = durationCalculation.getDuration(responseFromREST, duration);
 
         //Format string to be displayed on the screen
-        String durationString = convertDurationToString(durationDouble);
+        String durationString = durationCalculation.convertDurationToString(durationDouble);
 
         //Store duration string in context container
         session.setAttribute("DurationResult",  durationString);
@@ -84,41 +85,52 @@ public class CalculateDurationActionServlet extends HttpServlet {
      * Convert JSON response string into Duration object to get the duration value
      *
      * @param responseFromREST the response from rest
+     * @param duration         the duration
      * @return Calculation result object
      */
-    public Double getDuration(String responseFromREST, Duration duration) {
-        ObjectMapper objectMapper = new ObjectMapper();
-        Double durationResult = 0.0;
+//    public Double getDuration(String responseFromREST, Duration duration) {
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        Double durationResult = 0.0;
+//
+//        try {
+//            duration = objectMapper.readValue(responseFromREST, Duration.class);
+//            durationResult = duration.getDuration();
+//
+//        } catch (JsonGenerationException jge) {
+//            logger.info(jge);
+//        } catch (JsonMappingException jme) {
+//            logger.info(jme);
+//        } catch (IOException ioe) {
+//            logger.info(ioe);
+//        }
+//        return durationResult;
+//
+//    }
 
-        try {
-            duration = objectMapper.readValue(responseFromREST, Duration.class);
-            durationResult = duration.getDuration();
-
-        } catch (JsonGenerationException jge) {
-            logger.info(jge);
-        } catch (JsonMappingException jme) {
-            logger.info(jme);
-        } catch (IOException ioe) {
-            logger.info(ioe);
-        }
-        return durationResult;
-
-    }
-
-    public String convertDurationToString(Double durationDouble) {
-        int durationHours= durationDouble.intValue();
-        Double durationDecimal = durationDouble - durationHours;
-        long durationMinutes = Math.round(60 * durationDecimal);
-
-        if(durationMinutes == 0) {
-            return "You would have to exercise for " + durationHours;
-        } else if (durationHours == 0){
-            return "You would have to exercise for " + durationMinutes + " minutes";
-        } else {
-            return "You would have to exercise for " + durationHours + " hours and " + durationMinutes + " minutes";
-        }
-
-
-    }
+    /**
+     * Convert duration to string.
+     * @param durationDouble the duration double
+     * @return the string
+     */
+//    public String convertDurationToString(Double durationDouble) {
+//        logger.info("Duration double " + durationDouble);
+//
+//        int durationHours= durationDouble.intValue();
+//        logger.info("Duration hours " + durationHours);
+//        Double durationDecimal = durationDouble - durationHours;
+//        long durationMinutes = Math.round(60 * durationDecimal);
+//
+//        logger.info("Duration in minutes " + durationMinutes);
+//
+//        if(durationMinutes == 0) {
+//            return "You would have to exercise for " + durationHours;
+//        } else if (durationHours == 0){
+//            return "You would have to exercise for " + durationMinutes + " minutes";
+//        } else {
+//            return "You would have to exercise for " + durationHours + " hours and " + durationMinutes + " minutes";
+//        }
+//
+//
+//    }
 
 }

@@ -6,46 +6,22 @@ import javax.annotation.Generated;
 @Generated("com.robohorse.robopojogenerator")
 public class Response{
 
-	@JsonProperty("mets")
-	private double mets;
+	@JsonProperty("Duration:")
+	private double duration;
 
-	@JsonProperty("name")
-	private String name;
-
-	@JsonProperty("id")
-	private int id;
-
-	public void setMets(double mets){
-		this.mets = mets;
+	public void setDuration(double duration){
+		this.duration = duration;
 	}
 
-	public double getMets(){
-		return mets;
-	}
-
-	public void setName(String name){
-		this.name = name;
-	}
-
-	public String getName(){
-		return name;
-	}
-
-	public void setId(int id){
-		this.id = id;
-	}
-
-	public int getId(){
-		return id;
+	public double getDuration(){
+		return duration;
 	}
 
 	@Override
  	public String toString(){
 		return 
 			"Response{" + 
-			"mets = '" + mets + '\'' + 
-			",name = '" + name + '\'' + 
-			",id = '" + id + '\'' + 
+			"duration: = '" + duration + '\'' + 
 			"}";
 		}
 }
