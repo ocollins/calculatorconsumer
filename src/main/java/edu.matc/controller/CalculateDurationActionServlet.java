@@ -57,7 +57,8 @@ public class CalculateDurationActionServlet extends HttpServlet {
 
         //Call REST service to get duration result
         Client client = ClientBuilder.newClient();
-        String url = "http://localhost:8080/CaloriesCalculator/duration/json/";
+        //String url = "http://localhost:8080/CaloriesCalculator/duration/json/";
+        String url = "http://52.14.26.13:8080/CaloriesCalculator/duration/json/";
         url = url + activity + "/" + weight + "/" + calories +"/" + unit;
         logger.info(url);
         WebTarget target = client.target(url);

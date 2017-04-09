@@ -37,6 +37,7 @@ body {
     /*border-radius: 0.63rem;*/
     /*padding:1rem;*/
     /*float: left;*/
+    /*float: left;*/
     /*width: 30%;*/
     /*margin-left: 0.31rem;*/
     /*font-size: 1.25rem;*/
@@ -44,7 +45,7 @@ body {
 /*}*/
 #main_container_div {
     padding-bottom: 2rem;
-    width: 60%;
+    /*width: 60%;*/
     margin: auto;
 }
 

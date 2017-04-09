@@ -1,5 +1,6 @@
 edu/matc/CaloriesCalculator/Response.class
 edu/matc/CaloriesCalculator/Calculations.class
+edu/matc/controller/RestApiUrl.class
 edu/matc/CaloriesCalculator/Activities.class
 edu/matc/CaloriesCalculator/ActivitiesItem.class
 edu/matc/CaloriesCalculator/Calculation0.class

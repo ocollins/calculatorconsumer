@@ -37,6 +37,7 @@ body {
     /*border-radius: 0.63rem;*/
     /*padding:1rem;*/
     /*float: left;*/
+    /*float: left;*/
     /*width: 30%;*/
     /*margin-left: 0.31rem;*/
     /*font-size: 1.25rem;*/
@@ -44,7 +45,7 @@ body {
 /*}*/
 #main_container_div {
     padding-bottom: 2rem;
-    width: 60%;
+    /*width: 60%;*/
     margin: auto;
 }
 
@@ -73,7 +74,7 @@ body {
 #weight_text, #activity_select, #duration_select, #calories_text
 {
     float: left;
-    width: 90%;
+    width: 60%;
     margin: 0.8rem;
     border-radius: 0.43rem;
     padding: 0.31rem;

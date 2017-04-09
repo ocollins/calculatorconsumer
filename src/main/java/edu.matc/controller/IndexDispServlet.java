@@ -15,6 +15,7 @@ import edu.matc.CaloriesCalculator.ActivitiesItem;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,21 +23,18 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+import java.io.InputStream;
 import java.util.*;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
-//@WebServlet(
-//        name = "indexDispServlet",
-//        urlPatterns = { "/indexDispServlet" }
-//        //loadOnStartup = 1
-//)
-
+/**
+ * The type Index disp servlet.
+ */
 public class IndexDispServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
-
     /**
      * Handles HTTP GET requests.
      * @param request  the HttpServletRequest object
@@ -48,11 +46,15 @@ public class IndexDispServlet extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session = request.getSession(true);
+//        RestApiUrl restApiUrl = new RestApiUrl();
+//
+//        String restUrl = restApiUrl.getRestUrl();
 
         //Call the service to get a list of all activities to populate the dropbox
         Client client = ClientBuilder.newClient();
-        String url = "http://localhost:8080/CaloriesCalculator/activities";
-        WebTarget target = client.target(url + "/list");
+        //String url = "http://localhost:8080/CaloriesCalculator/activities";
+        String url = "http://52.14.26.13:8080/CaloriesCalculator/";
+        WebTarget target = client.target(url + "activities/list");
 
         //Get responce
         String restResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
@@ -82,4 +84,6 @@ public class IndexDispServlet extends HttpServlet {
         dispatcher.forward(request, response);
 
     }
+
+
 }

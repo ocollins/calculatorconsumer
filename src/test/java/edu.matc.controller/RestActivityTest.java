@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.CaloriesCalculator.*;
+import edu.matc.controller.RestApiUrl;
 import org.apache.log4j.Logger;
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -35,6 +36,13 @@ public class RestActivityTest {
         //url2 = "http://localhost:8080/CaloriesCalculator/duration/json/1/85/300/kg";
         //url1 = "http://localhost:8080/CaloriesCalculator/activities/list";
     }
+
+//    @Test
+//    public void getRestAPIUrlTest() {
+//        RestApiUrl restApiUrl = new RestApiUrl();
+//        String url = restApiUrl.getRestUrl();
+//        //logger.info("REST URL " + restApiUrl.getRestUrl());
+//    }
 
 //    @Test
 //    public void getAllActivities() throws Exception {
@@ -69,6 +77,7 @@ public class RestActivityTest {
     @Test
     public void getCaloriesBurnedJSON() throws Exception {
         url1 = url1 + "/json/1/85/1.5/kg";
+
         WebTarget target = client.target(url1);
         String response = target.request().get(String.class);
         logger.info("Returning calories " + response);

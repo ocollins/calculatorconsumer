@@ -2,33 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5d21467-a866-4792-9fe1-449e060e6c80" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu.matc/controller/DurationCalculation.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Activity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/CaloriesCalculator/Activity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/CaloriesCalculator/Activity.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu.matc/controller/RestApiUrl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/restapi.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/calculatorconsumer/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.controller.RestActivityTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.controller.RestActivityTest.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer.war" afterPath="$PROJECT_DIR$/target/calculatorconsumer.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/CaloriesCalculator/Duration.class" afterPath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/CaloriesCalculator/Duration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/CaloriesCalculator/Response.class" afterPath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/CaloriesCalculator/Response.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/controller/CalculateCaloriesActionServlet.class" afterPath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/controller/CalculateCaloriesActionServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/controller/CalculateDurationActionServlet.class" afterPath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/controller/CalculateDurationActionServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/CaloriesCalculator/Duration.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/CaloriesCalculator/Duration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/CaloriesCalculator/Response.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/CaloriesCalculator/Response.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/controller/IndexDispServlet.class" afterPath="$PROJECT_DIR$/target/calculatorconsumer/WEB-INF/classes/edu/matc/controller/IndexDispServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/CalculateCaloriesActionServlet.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/CalculateCaloriesActionServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/CalculateDurationActionServlet.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/CalculateDurationActionServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/controller/IndexDispServlet.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/controller/IndexDispServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/controller/RestActivityTest.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/matc/controller/RestActivityTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/MyLog.log" afterPath="$PROJECT_DIR$/logs/MyLog.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateDurationActionServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateDurationActionServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Duration.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Duration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Response.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Response.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/calculatorconsumer/css/index.css" afterPath="$PROJECT_DIR$/target/calculatorconsumer/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.controller.RestActivityTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.matc.controller.RestActivityTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/edu.matc.controller.RestActivityTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.matc.controller.RestActivityTest.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +41,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CalculateCaloriesActionServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java">
+      <file leaf-file-name="IndexDispServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="98" column="9" lean-forward="false" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+            <state relative-caret-position="405">
+              <caret line="55" column="65" lean-forward="false" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestApiUrl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/RestApiUrl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -57,63 +76,11 @@
       <file leaf-file-name="CalculateDurationActionServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateDurationActionServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="63" column="69" lean-forward="false" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+            <state relative-caret-position="564">
+              <caret line="60" column="72" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DurationCalculation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/DurationCalculation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="133" column="1" lean-forward="false" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestActivityTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="41" column="89" lean-forward="true" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Response.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Response.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Duration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Duration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -121,29 +88,21 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2470">
-              <caret line="130" column="7" lean-forward="false" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
+            <state relative-caret-position="180">
+              <caret line="51" column="90" lean-forward="true" selection-start-line="51" selection-start-column="90" selection-end-line="51" selection-end-column="90" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weight.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/weight.jsp">
+      <file leaf-file-name="RestActivityTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/activity.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="-803">
+              <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,16 +157,19 @@
         <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/KillSessionServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/CleanupServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Activities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/weight.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/activity.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/index.css" />
-        <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateDurationActionServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Duration.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/DurationCalculation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateDurationActionServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/Properties.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/restapi.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/RestApiUrl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/index.css" />
       </list>
     </option>
   </component>
@@ -247,7 +209,24 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="calculatorconsumer Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
     </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
@@ -270,9 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -537,6 +513,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -546,12 +525,16 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projects/src/java112/analyzer/AnalyzeFile.java" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/edu.matc/controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="edu.matc.controller" />
       <recent name="edu.matc.CaloriesCalculator" />
@@ -562,58 +545,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.tomee">
-    <configuration default="false" name="RestActivityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="edu.matc.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="calculatorconsumer" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="edu.matc.controller" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.controller.RestActivityTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="RestActivityTest.getAllActivities" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="edu.matc.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="calculatorconsumer" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="edu.matc.controller" />
-      <option name="MAIN_CLASS_NAME" value="edu.matc.controller.RestActivityTest" />
-      <option name="METHOD_NAME" value="getAllActivities" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="RestActivityTest.getDurationText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -679,6 +610,58 @@
       <option name="PACKAGE_NAME" value="edu.matc.controller" />
       <option name="MAIN_CLASS_NAME" value="edu.matc.controller.RestActivityTest" />
       <option name="METHOD_NAME" value="getCaloriesBurnedJSON" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RestActivityTest.servletInit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.matc.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="calculatorconsumer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.matc.controller" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.controller.RestActivityTest" />
+      <option name="METHOD_NAME" value="servletInit" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RestActivityTest.getRestAPIUrlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.matc.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="calculatorconsumer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.matc.controller" />
+      <option name="MAIN_CLASS_NAME" value="edu.matc.controller.RestActivityTest" />
+      <option name="METHOD_NAME" value="getRestAPIUrlTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -874,6 +857,28 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
@@ -1017,19 +1022,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TomEE Server.tomee" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RestActivityTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getAllActivities" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getDurationText" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getDurationJSON" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getCaloriesBurnedJSON" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getDurationText" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getDurationJSON" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getCaloriesBurnedJSON" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RestActivityTest.servletInit" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getRestAPIUrlTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getDurationJSON" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getDurationText" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getCaloriesBurnedJSON" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getAllActivities" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RestActivityTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getCaloriesBurnedJSON" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getRestAPIUrlTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RestActivityTest.servletInit" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getDurationJSON" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RestActivityTest.getDurationText" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -1076,48 +1081,49 @@
       <workItem from="1491447224941" duration="1284000" />
       <workItem from="1491530278773" duration="3282000" />
       <workItem from="1491583292983" duration="3051000" />
-      <workItem from="1491616078725" duration="2707000" />
+      <workItem from="1491616078725" duration="3252000" />
+      <workItem from="1491679147192" duration="13263000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestActivityTest_getAllActivities - 2017.04.07 at 20h 52m 25s.xml">
-      <configuration name="RestActivityTest.getAllActivities" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestActivityTest_getCaloriesBurnedJSON - 2017.04.07 at 20h 52m 54s.xml">
+    <history-entry file="RestActivityTest_getCaloriesBurnedJSON - 2017.04.08 at 17h 48m 25s.xml">
       <configuration name="RestActivityTest.getCaloriesBurnedJSON" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestActivityTest_getDurationJSON - 2017.04.07 at 21h 04m 10s.xml">
-      <configuration name="RestActivityTest.getDurationJSON" configurationId="JUnit" />
+    <history-entry file="RestActivityTest_getRestAPIUrlTest - 2017.04.08 at 15h 21m 14s.xml">
+      <configuration name="RestActivityTest.getRestAPIUrlTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestActivityTest_getDurationJSON - 2017.04.07 at 21h 05m 47s.xml">
-      <configuration name="RestActivityTest.getDurationJSON" configurationId="JUnit" />
+    <history-entry file="RestActivityTest_getRestAPIUrlTest - 2017.04.08 at 15h 21m 51s.xml">
+      <configuration name="RestActivityTest.getRestAPIUrlTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestActivityTest_getDurationJSON - 2017.04.07 at 21h 12m 58s.xml">
-      <configuration name="RestActivityTest.getDurationJSON" configurationId="JUnit" />
+    <history-entry file="RestActivityTest_getRestAPIUrlTest - 2017.04.08 at 15h 24m 28s.xml">
+      <configuration name="RestActivityTest.getRestAPIUrlTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestActivityTest_getDurationJSON - 2017.04.07 at 21h 14m 28s.xml">
-      <configuration name="RestActivityTest.getDurationJSON" configurationId="JUnit" />
+    <history-entry file="RestActivityTest_getRestAPIUrlTest - 2017.04.08 at 15h 46m 00s.xml">
+      <configuration name="RestActivityTest.getRestAPIUrlTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestActivityTest_getDurationJSON - 2017.04.07 at 21h 16m 27s.xml">
-      <configuration name="RestActivityTest.getDurationJSON" configurationId="JUnit" />
+    <history-entry file="RestActivityTest_getRestAPIUrlTest - 2017.04.08 at 15h 47m 08s.xml">
+      <configuration name="RestActivityTest.getRestAPIUrlTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestActivityTest_getDurationJSON - 2017.04.07 at 21h 17m 42s.xml">
-      <configuration name="RestActivityTest.getDurationJSON" configurationId="JUnit" />
+    <history-entry file="RestActivityTest_getRestAPIUrlTest - 2017.04.08 at 15h 47m 23s.xml">
+      <configuration name="RestActivityTest.getRestAPIUrlTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestActivityTest_getDurationJSON - 2017.04.07 at 21h 18m 18s.xml">
-      <configuration name="RestActivityTest.getDurationJSON" configurationId="JUnit" />
+    <history-entry file="RestActivityTest_getRestAPIUrlTest - 2017.04.08 at 15h 50m 41s.xml">
+      <configuration name="RestActivityTest.getRestAPIUrlTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RestActivityTest_getDurationText - 2017.04.07 at 20h 53m 45s.xml">
-      <configuration name="RestActivityTest.getDurationText" configurationId="JUnit" />
+    <history-entry file="RestActivityTest_getRestAPIUrlTest - 2017.04.08 at 15h 51m 41s.xml">
+      <configuration name="RestActivityTest.getRestAPIUrlTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestActivityTest_getRestAPIUrlTest - 2017.04.08 at 15h 55m 01s.xml">
+      <configuration name="RestActivityTest.getRestAPIUrlTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101504000" />
+    <option name="totallyTimeSpent" value="115312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1125,14 +1131,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982844" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.127683" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.78914404" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22454596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22729774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296643" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1140,7 +1146,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1157,7 +1163,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1170,44 +1176,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Calculation0.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Calculation1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Calculation2.java" />
@@ -1275,13 +1243,6 @@
         <state relative-caret-position="399">
           <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="34" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1369,13 +1330,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Activity.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/CaloriesCalculator/Activities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1398,13 +1353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="56" column="22" lean-forward="false" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/activity.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1418,40 +1366,6 @@
         <state relative-caret-position="133">
           <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2470">
-          <caret line="130" column="7" lean-forward="false" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="133" column="1" lean-forward="false" selection-start-line="133" selection-start-column="1" selection-end-line="133" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="98" column="9" lean-forward="false" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateDurationActionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="63" column="69" lean-forward="false" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1471,10 +1385,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../projects/config/analyzer.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/DurationCalculation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../projects/src/java112/analyzer/AnalyzeFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/restapi.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/RestApiUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/IndexDispServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="55" column="65" lean-forward="false" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateDurationActionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="60" column="72" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1483,8 +1465,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu.matc.controller/RestActivityTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="41" column="89" lean-forward="true" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
+        <state relative-caret-position="-803">
+          <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu.matc/controller/CalculateCaloriesActionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="62" column="69" lean-forward="false" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="51" column="90" lean-forward="true" selection-start-line="51" selection-start-column="90" selection-end-line="51" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
           <folding />
         </state>
       </provider>

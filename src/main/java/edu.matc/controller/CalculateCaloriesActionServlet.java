@@ -55,7 +55,8 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
 
         //Call REST service to get calories burned result
         Client client = ClientBuilder.newClient();
-        String url = "http://localhost:8080/CaloriesCalculator/activities/json/";
+        //String url = "http://localhost:8080/CaloriesCalculator/activities/json/";
+      String url = "http://52.14.26.13:8080/CaloriesCalculator/activities/json/";
         url = url + activity + "/" + weight + "/" + duration +"/" + unit;
         logger.info(url);
         WebTarget target = client.target(url);
