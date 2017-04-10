@@ -20,6 +20,10 @@ body {
     font-weight: bold;
 }
 
+.contaner_tbl {
+    width:90%;
+}
+
 .content_div{
     border:2px solid grey;
     border-radius: 0.625rem;
@@ -64,8 +68,6 @@ body {
 /*}*/
 
 #calories_form, #duration_form {
-    /*clear: left;*/
-    /*display: flex;*/
     align-items: center;
     justify-content: center;
     width: 100%;

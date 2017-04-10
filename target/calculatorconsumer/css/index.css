@@ -20,6 +20,10 @@ body {
     font-weight: bold;
 }
 
+.contaner_tbl {
+    width:90%;
+}
+
 .content_div{
     border:2px solid grey;
     border-radius: 0.625rem;
@@ -64,8 +68,6 @@ body {
 /*}*/
 
 #calories_form, #duration_form {
-    /*clear: left;*/
-    /*display: flex;*/
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -74,7 +76,7 @@ body {
 #weight_text, #activity_select, #duration_select, #calories_text
 {
     float: left;
-    width: 90%;
+    width: 60%;
     margin: 0.8rem;
     border-radius: 0.43rem;
     padding: 0.31rem;

@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.CaloriesCalculator.*;
-import edu.matc.controller.RestApiUrl;
 import org.apache.log4j.Logger;
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -37,42 +36,35 @@ public class RestActivityTest {
         //url1 = "http://localhost:8080/CaloriesCalculator/activities/list";
     }
 
-//    @Test
-//    public void getRestAPIUrlTest() {
-//        RestApiUrl restApiUrl = new RestApiUrl();
-//        String url = restApiUrl.getRestUrl();
-//        //logger.info("REST URL " + restApiUrl.getRestUrl());
-//    }
 
-//    @Test
-//    public void getAllActivities() throws Exception {
-//        WebTarget target = client.target(url1 + "/list");
-//        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-//        logger.info("response from the call to REST " + response);
-//        //logger.info("status " + target.request().);
-//
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        Activities activities = null;
-//        ActivitiesItem testActivity = null;
-//        //Response testActivity;
-//        try {
-//            activities = objectMapper.readValue(response, Activities.class);
-//            testActivity = activities.getActivities().get(0);
-//            getCaloriesBurnedJSON();
-//            logger.info("Testing activities " + testActivity.getActivityTitle());
-//
-//
-//        } catch (JsonGenerationException jge) {
-//            logger.info(jge);
-//        } catch (JsonMappingException jme) {
-//            logger.info(jme);
-//        } catch (IOException ioe) {
-//            logger.info(ioe);
-//        }
-//
-//        assertEquals("Activity is not walking ", "walking", testActivity.getActivityTitle());
-//        assertEquals("Activity ID is not 1 ", "1", testActivity.getActivityID());
-//    }
+    @Test
+    public void getAllActivities() throws Exception {
+        WebTarget target = client.target(url1 + "/list");
+        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
+        logger.info("response from the call to REST " + response);
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        Activities activities = null;
+        ActivitiesItem testActivity = null;
+
+        try {
+            activities = objectMapper.readValue(response, Activities.class);
+            testActivity = activities.getActivities().get(0);
+            getCaloriesBurnedJSON();
+            logger.info("Testing activities " + testActivity.getActivityTitle());
+
+
+        } catch (JsonGenerationException jge) {
+            logger.info(jge);
+        } catch (JsonMappingException jme) {
+            logger.info(jme);
+        } catch (IOException ioe) {
+            logger.info(ioe);
+        }
+
+        assertEquals("Activity is not walking ", "walking", testActivity.getActivityTitle());
+        assertEquals("Activity ID is not 1 ", "1", testActivity.getActivityID());
+    }
 
     @Test
     public void getCaloriesBurnedJSON() throws Exception {
@@ -133,9 +125,5 @@ public class RestActivityTest {
     }
 
 
-    @Test
-    public void getCaloriesBurnedHTML() throws Exception {
-
-    }
 
 }

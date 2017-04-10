@@ -44,19 +44,17 @@ public class IndexDispServlet extends HttpServlet {
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        logger.info("In the display servlet");
 
         HttpSession session = request.getSession(true);
-//        RestApiUrl restApiUrl = new RestApiUrl();
-//
-//        String restUrl = restApiUrl.getRestUrl();
 
         //Call the service to get a list of all activities to populate the dropbox
         Client client = ClientBuilder.newClient();
         //String url = "http://localhost:8080/CaloriesCalculator/activities";
-        String url = "http://52.14.26.13:8080/CaloriesCalculator/";
-        WebTarget target = client.target(url + "activities/list");
-
-        //Get responce
+        String url = "http://52.14.26.13:8080/CaloriesCalculator/activities";
+        WebTarget target = client.target(url + "/list");
+//
+        //Get response
         String restResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
         logger.info("response from the call to REST " + restResponse);
 
@@ -67,7 +65,6 @@ public class IndexDispServlet extends HttpServlet {
         try {
             activities = objectMapper.readValue(restResponse, Activities.class);
             List<ActivitiesItem> activityList = activities.getActivities();
-            //request.setAttribute("activities", activityList);
             session.setAttribute("activities", activityList);
 
         } catch (JsonGenerationException jge) {
